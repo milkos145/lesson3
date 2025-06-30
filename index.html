@@ -8,7 +8,9 @@
     <meta name="description" content="THE LITTLE CAFEのサイトです">
     <meta name="keywords" content="動物病院">
     <meta name="robots" content="noindex">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -187,7 +189,7 @@
                     <span class="address">長崎県長崎市横尾1丁目5-36 </span>
                     </p> 
                     <p class="tel">電話：<span class="number">000-0000-0000</span></p>
-                    <p class="mail">メール : info@example.com</p>
+                    <p class="mail">メール：info@example.com</p>
                     <hr>
                     <p class="time">診療時間：24時間365日</p>
                     <p class="holiday">休診日：なし</p>
@@ -202,41 +204,32 @@
                 <img src="images/niku.png" alt="アイコン" class="contact-icon">
               </div> 
               <div class="desc">
-               <p class="section-desc">ご予約やご質問などお気軽にお問い合わせください。<br>お問い合わせいただいてから3日以内の返信となります。
+               <p class="section-desc">
+                ご予約やご質問などお気軽にお問い合わせください。<br>
+                お問い合わせいただいてから3日以内の返信となります。
                </p>
               </div>
-              <div class="contact__form form">
+              <div class="contact_form">
                 <form>   
-                    <div class="form__items"> 
-                        <dl class="form__item">
-                          <dt class="form__label">
-                            <label for="name">お名前</label>
-                          </dt>
-                          <dd class="form__input">
+                    <div class="form_items"> 
+                        <div class="form_item">
+                            <label for="name" class="form_label">お名前</label>
                             <input type="text" name="name" id="name">
-                          </dd>
-                        </dl>
-                        <dl class="form__item">
-                          <dt class="form__label">
-                            <label for="email">メールアドレス</label>
-                          </dt>
-                          <dd class="form__input">
+                        </div>
+                        <div class="form_item">
+                            <label for="email" class="form_label">メールアドレス</label>
                             <input type="email" name="email" id="email">
-                          </dd>
-                        </dl>
-                        <dl class="form__item">
-                          <dt class="form__label">
-                             <label for="content">内　容</label>
-                          </dt>
-                          <dd class="form__textarea">
-                             <textarea name="content" id="content"></textarea>
-                          </dd>
-                        </dl>
+                        </div>
+                        <div class="form_item">
+                            <label for="content" class="form_label">内　容</label>
+                            <textarea name="content" id="content"></textarea>
+                        </div>
                     </div>
-                    <div class="contact__button">
+                    <div class="contact_button">
                       <input type="submit" value="送 信">
-                    </div>  
-                </form>  
+                    </div> 
+                </form> 
+              </div>  
             </section>
             <footer class="footer">
                 <div class="inner">
