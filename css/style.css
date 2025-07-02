@@ -1,13 +1,22 @@
 @charset "utf-8";
+* {
+  box-sizing: border-box;
+}
 body {
     margin:0;
     font-family: "Noto Sans JP",sans-serif;
-    font-weight: 500;
-    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
 }
 p,h1,h2,h3,h4,h5,a {
     margin: 0;
     color: #505050;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 a {
     text-decoration: none;
@@ -16,31 +25,38 @@ a {
     height: 100%;
     align-items: center;
 }
-#container {
+.container {
     font-size: 14px;
     max-width: 1080px;
-    overflow: hidden;
+    padding: 0 30px;
     margin: 0 auto;
 }
 .header {
-    font-size: 14px;
-    height: 50px;
-    display: flex;
-    align-items: center;
     width: 100%;
+    font-size: 14px;
+    background-color: #fff;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 .title {
     display: flex;
-  align-items: center; /* ← これで縦中央揃え */
-  gap: 8px;
-  height: 50px; /* ← ヘッダーの高さ */
+    align-items: center; /* ← これで縦中央揃え */
+    gap: 8px;
+    height: 50px; /* ← ヘッダーの高さ */
 }
 .header-icon {
-    width: 25.49px;
-    
+    width: 25.49px; 
     margin-top: 13px;
-    margin-left: 99px;
     margin-bottom: 12px;
+}
+.header .container {
+  display: flex;
+
+  height: 50px;
+  max-width: 880px;
 }
 .header-title {
     font-size: 18px;
@@ -58,13 +74,11 @@ a {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-right: 60px;
 }
 .header_nav {
   display: flex;
   align-items: center;
   height: 100%;
-  
 }
 .header_nav li {
   list-style-type: none;
@@ -72,10 +86,8 @@ a {
   height: 100%; /* ← 各liも高さを揃える */
   display: flex;
   align-items: center;
-
 }
 .nav_list {
-    margin-left: auto;
     display: flex;
     align-items: center;
     list-style: none;
@@ -90,14 +102,16 @@ a {
 .header-title:hover {
   color: #c08c5c; /* ホバー時に色が変わる */
 }
-.main {
+#main {
     width: 100%;
     position: relative;
-    text-align: center;
+    padding-top: 50px;
+}
+.main .fv {
+    position: relative;
 }
 .main img {
-     max-width: 1080px;
-     height: auto;
+     width: 100%;
 }
 .main_copy {
     position: absolute;
@@ -107,7 +121,6 @@ a {
     padding: 23px;
     width: 452px;
     text-align: left;
-    
 }
 .main_copy p {
     font-size: 25px;
@@ -153,7 +166,7 @@ a {
 #tsuyomi {
     padding: 60px 100px 10px;
     background-color: rgba(13,150,160,0.102);
-    max-width: 880px;
+    width: 100%;
 }
 .tsuyomi-with-images {
     display: flex;
@@ -173,7 +186,7 @@ a {
 .tsuyomi-item {
     display: flex;
     max-width: 880px;
-    text-align: center;
+    margin: 0 auto;
     justify-content: flex-start;
 }
 .tsuyomi-item.reverse {
@@ -244,7 +257,7 @@ a {
 }
 #service {
     padding: 60px 100px 59px;
-    max-width: 880px;
+    width: 100%;
 }
 .service-with-images {
     display: flex;
@@ -262,7 +275,8 @@ a {
 }
 .service-list {
     display: flex;
-    text-align: center;
+    max-width: 880px;
+    margin: 0 auto;
 }
 .service-content {
     width: 100%;
@@ -275,6 +289,7 @@ a {
     font-size: 20px;
     font-weight: 700;
     margin: 0;
+    text-align: center;
 }
 .item-list {
     font-size: 17px;
@@ -293,7 +308,7 @@ a {
 }
 #news {
     padding: 63px 100px 67px;
-    max-width: 880px;
+    width: 100%;
     background-color: rgba(13,150,160,0.102);
 }
 .news-with-images {
@@ -316,7 +331,8 @@ a {
     padding: 0;
     margin: 0; 
     border-top: 1px solid #707070; 
-    text-align: center;
+    max-width: 880px;
+    margin: 0 auto;
 }
 .news-item {
     padding: 15px 0;
@@ -349,7 +365,7 @@ a {
 }
 #access {
     padding: 63px 100px 15px;
-    max-width: 880px;
+    width: 100%;
 }
 .access-with-images {
     display: flex;
@@ -373,6 +389,7 @@ a {
 .access-flex {
     display: flex;
     max-width: 880px;
+    margin: 0 auto;
 }
 .access-img-area {
     width: 53%;
@@ -439,8 +456,8 @@ a {
 #contact {
     padding: 62px 100px 80px;
     background-color: rgba(13,150,160,0.102);
-    max-width: 1080px;
-    margin: 0 auto;
+    width: 100%;
+
 }
 .contact-with-images {
     display: flex;
@@ -476,6 +493,8 @@ a {
     display: flex;
     gap: 18px;
     margin-bottom: 30px;
+    max-width: 880px;
+    margin: 0 auto;
 }
 .form_label {
     font-size: 20px;
@@ -528,7 +547,7 @@ input[type="submit"]:hover {
     background-color: #505050;
     padding-block: 46px 71px;
     text-align: center;
-    max-width: 1080px;
+    width: 100%;
 }
 .inner {
   display: flex;
