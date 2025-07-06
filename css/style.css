@@ -5,9 +5,11 @@
 body {
     margin:0;
     font-family: "Noto Sans JP",sans-serif;
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 p,h1,h2,h3,h4,h5,a {
     margin: 0;
@@ -41,22 +43,17 @@ a {
     left: 0;
     z-index: 999;
 }
-.title {
-    display: flex;
-    align-items: center; /* ← これで縦中央揃え */
-    gap: 8px;
-    height: 50px; /* ← ヘッダーの高さ */
-}
+
 .header-icon {
     width: 25.49px; 
     margin-top: 13px;
     margin-bottom: 12px;
+    margin-right: 8px;
 }
 .header .container {
   display: flex;
-
   height: 50px;
-  max-width: 880px;
+  width: 880px;
 }
 .header-title {
     font-size: 18px;
@@ -93,7 +90,9 @@ a {
     list-style: none;
     color: #505050;
     height: 100%;
-    margin: 0;
+    font-weight: 700;
+   
+ 
 }
 .header_nav li:not(:first-of-type) {
   margin-left: 10px;
@@ -102,31 +101,31 @@ a {
 .header-title:hover {
   color: #c08c5c; /* ホバー時に色が変わる */
 }
-#main {
-    width: 100%;
-    position: relative;
-    padding-top: 50px;
+.main {
+    width: 100%;  
 }
 .main .fv {
     position: relative;
 }
 .main img {
      width: 100%;
+     margin-top: 50px;
+     height: auto;
 }
 .main_copy {
     position: absolute;
-    top: 30%;
-    left: 0px;
-    background-color: rgba(255,255,255,0.702);
+    top: 152px;
+    margin-left: 100px;
     padding: 23px;
-    width: 452px;
+    width: 100%;
+  
     text-align: left;
 }
 .main_copy p {
     font-size: 25px;
     margin: 0 0 8px;
     font-weight: 700;
-    padding-left: 79px;
+    margin-left: 79px;
 }
 .main_copy h1 {
     font-size: 40px;
@@ -136,10 +135,10 @@ a {
     padding-left: 79px;
     font-weight: 700;
 }
-.messege {
+.message {
     max-width: 1080px;
+    margin: 0 auto;
     position: relative;
-  
 }
 .br-sp {
     display: none;
@@ -153,15 +152,16 @@ a {
 }
 .message p {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     font-size: 18px;
     color: #505050; 
     line-height: 33px;
 }
 .message img {
     width: 83.75px;
-    height: 77.12px; 
-    margin: -80px 76.24px 33.88px 920px;
+    position: absolute;
+    right:  80px;
+    bottom: 33px;
 }
 #tsuyomi {
     padding: 60px 100px 10px;
@@ -277,6 +277,7 @@ a {
     display: flex;
     max-width: 880px;
     margin: 0 auto;
+  
 }
 .service-content {
     width: 100%;
@@ -364,7 +365,7 @@ a {
     font-size: 17px;  
 }
 #access {
-    padding: 63px 100px 15px;
+    padding: 63px 100px 70px;
     width: 100%;
 }
 .access-with-images {
@@ -390,16 +391,17 @@ a {
     display: flex;
     max-width: 880px;
     margin: 0 auto;
+    
 }
 .access-img-area {
     width: 53%;
     position: relative;
     margin-bottom: 50px;
-    overflow: hidden;
+ 
 }
 .access-img-area iframe {
-    position: absolute
-    top 0;
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 300px;
@@ -444,8 +446,7 @@ a {
     margin-bottom: 27px;
 }
 .hr {
-    border: 1px;
-    color: #707070;
+    border: 1px solid#707070;
 }
 .time, .holiday {
     font-size: 18px;
@@ -504,19 +505,24 @@ a {
     margin-top: 10px;
 }
 input[type="text"],
-input[type="email"],
-textarea {
+input[type="email"] {
   border: 1px solid #FFFFFF;
-  height: 18px;
-  width: 711px;
+  height: 40px;
+  width: 100%;
+  max-width: 711px;
   padding: 10px 15px;
   font-size: 16px;
   border-radius: 4px;
   margin-inline: auto;
+  margin-bottom: 30px;
 }
 textarea {
-  height: 270px;
+    width: 100%;
+  max-width: 711px;
+  height: 300px;
   resize: none;
+  border: none;
+
 }
 .contact_button {
   margin-top: 58px;
@@ -616,11 +622,10 @@ input[type="submit"]:hover {
     font-size: 16px;
   }
   .header-icon {
-    margin-left: 20px;
+    margin-left: 5px;
   }
   .header-title {
     font-size: 20px;
-    margin: 8 9; 
   }
   .nav_content {
     display: none;
@@ -631,8 +636,7 @@ input[type="submit"]:hover {
     text-align: center;
   }
   .main img {
-    width: 100%;
-    height: auto;
+    width: 100%; 
   }
   .main_copy {
         position: absolute;
@@ -774,22 +778,29 @@ input[type="submit"]:hover {
     }
     .access-text-area {
         margin-left: 0;
-        white-space: nowrap;
         width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
     .post,.address,.tel,.mail,.time,.holiday {
         font-size: 16px;
     }
     .access-img-area {
         width: 100%;
-        margin-right: 20px;
-        margin-bottom: 30px;
+    max-width: 100%;
+    margin: 0 auto 40px;
+    }
+    .access-img-area iframe {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 322px;
+        display: block;
     }
     .number {
         font-size: 25px;
     }
     .hr {
-        width: 100%;
+        margin: 10px 0;
 
     }
     #contact {
@@ -812,7 +823,7 @@ input[type="submit"]:hover {
     input[type="text"],
     input[type="email"],
     textarea {
-        width: 300px;
+        width: 335px;
     }
     .contact_button {
         margin-left: 0;
@@ -831,4 +842,4 @@ input[type="submit"]:hover {
         padding: 16px 10px; /* スマホ時は左右パディング狭く */
 
     }
-    }
+}
