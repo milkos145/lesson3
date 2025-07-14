@@ -114,7 +114,7 @@ a {
 .main_copy {
     background-color: rgba(255,255,255,0.7);
     position: absolute;
-    margin-top: 43px;
+   
     left: 0;
     padding: 23px 35px 23px 99px;
 }
@@ -518,6 +518,7 @@ textarea {
     width: 200px;
     display: flex;
     justify-content: center;
+    font-family: "Noto Sans JP",sans-serif;
 }
 input[type="submit"] {
     width: 100%;
@@ -530,6 +531,7 @@ input[type="submit"] {
     transition: .4s;
     padding: 0;
     border-radius: 0.7rem;
+    font-family: "Noto Sans JP",sans-serif;
 }
 input[type="submit"]:hover {
     color: #000;
@@ -593,7 +595,7 @@ input[type="submit"]:hover {
     width: 22px;
     height: 18px;
 }
-@media screen and (min-width:767px) {
+@media screen and (min-width:769px) {
     .pc_none{
         display: none!important;
     }
@@ -601,8 +603,8 @@ input[type="submit"]:hover {
         padding: 50px 60px 60px;
     }
     .main_copy {
-        top:50%;
-        transform: translateY(-120%);
+        top:26%;
+        transform: translateY(-90%);
     }
 }
 @media screen and (max-width:768px) {
@@ -634,8 +636,8 @@ input[type="submit"]:hover {
         width: 100%;
     }
     .main_copy {
-        width: 83%;
-        top: 22.3%;
+        width: 43%;
+        top: 56.6%;
         transform: translateY(50%);
         padding: 12px 16px;
         bottom: auto;  
@@ -673,19 +675,19 @@ input[type="submit"]:hover {
         width: 68px;
         height: auto;
     }
-    #tsuyomi {
+    #strengths {
         padding: 50px 20px 0;  
     }
-    .tsuyomi-with-images {
+    .strengths-with-images {
         margin-bottom: 41px;
     }
-    .tsuyomi-item {
+    .strengths-item {
         display: flex;
         flex-direction: column;
         text-align: center;
         margin-bottom: 35px;
     }
-    .tsuyomi-img-area {
+    .strengths-img-area {
         order: 1;
         width: 100%;
         margin-bottom: 23px;
@@ -693,42 +695,42 @@ input[type="submit"]:hover {
         justify-content: center;
         text-align: center;
     }
-    .tsuyomi-img-area img {
+    .strengths-img-area img {
         display: block;
         margin: 0 auto;
     }
-    .tsuyomi-text-area,
-    .tsuyomi-text-area2,
-    .tsuyomi-text-area3 {
+    .strengths-text-area,
+    .strengths-text-area2,
+    .strengths-text-area3 {
         order: 2;
         width: 100%;
         margin: 0 0 10px;
     }
-    .tsuyomi-text-area h4 {
+    .strengths-text-area h4 {
         font-size: 20px;
         margin-bottom: 18px;
     }
-    .tsuyomi-text-area p {
+    .strengths-text-area p {
         font-size: 16px;
         white-space: wrap;
         line-height: 1.8;
     }
-    .tsuyomi-text-area2 h4 {
+    .strengths-text-area2 h4 {
         margin-left: 10px;
         font-size: 20px;
         margin-bottom: 10px;
     }
-    .tsuyomi-text-area2 p {
+    .strengths-text-area2 p {
         font-size: 16px;
         white-space: wrap;
         line-height: 1.8;   
     }
-    .tsuyomi-text-area3 h4 {
+    .strengths-text-area3 h4 {
         margin-left: 10px;
         font-size: 20px;
         margin-bottom: 10px;
     }
-    .tsuyomi-text-area3 p {
+    .strengths-text-area3 p {
         font-size: 16px;
         white-space: wrap;
         line-height: 1.8;
@@ -921,10 +923,10 @@ input[type="submit"]:hover {
     margin: 0 10px;
     vertical-align: middle;
 }
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px){
     .main_copy {
     width: 90%;
-    top: 13%;
+    top: 15.5%;
     transform: translateY(50%);
     padding: 12px 16px;
     bottom: auto;  
@@ -936,4 +938,7 @@ input[type="submit"]:hover {
   .main_copy h1 {
     font-size: 29.5px;
   }
+}
+body, input, textarea, button, select {
+  font-family: "Noto Sans JP", sans-serif;
 }
