@@ -32,6 +32,12 @@ a {
     padding: 0 30px;
     margin: 0 auto;
 }
+.inner {
+    max-width: 940px;
+    padding: 0 30px;
+    margin: 0 auto;
+    width: 100%;
+}
 .header {
     width: 100%;
     font-size: 14px;
@@ -101,20 +107,17 @@ a {
 }
 .main {
     width: 100%;  
-}
-.main .fv {
+    margin-top: 50px;
     position: relative;
 }
 .main img {
     width: 100%;
     vertical-align: bottom;
     height: auto;
-    margin-top: 50px;
 }
 .main_copy {
     background-color: rgba(255,255,255,0.7);
     position: absolute;
-   
     left: 0;
     padding: 23px 35px 23px 99px;
 }
@@ -159,7 +162,7 @@ a {
     bottom: 33px;
 }
 #strengths {
-    padding: 65px 100px 18px;
+    padding: 65px 0 18px;
     background-color: rgba(13,150,160,0.102);
     width: 100%;
 }
@@ -180,8 +183,8 @@ a {
 }
 .strengths-item {
     display: flex;
-    max-width: 880px;
-    margin: 0 auto;
+    width: 100%;
+
     justify-content: flex-start;
 }
 .strengths-item.reverse {
@@ -190,7 +193,7 @@ a {
 .strengths-text-area {
     display: block;
     width: 50%;
-    margin-right: 45px;
+    margin-right: 44px;
     margin-top: 48px;  
 }
 .strengths-text-area h4 {
@@ -203,29 +206,31 @@ a {
     text-align: left;
     font-weight: 500;
     line-height: 33px;
+    width: 100%;
 }
 .strengths-text-area2 {
     display: block;
     width: 50%;
-    margin-left: 47px;
+    margin-left:40px;
     margin-top: 48px; 
     text-align: left; 
 }
 .strengths-text-area2 h4 {
     font-weight: 700; 
     font-size: 22px;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
 }
 .strengths-text-area2 p {
     font-size: 18px;
     text-align: left;
     font-weight: 500;
-    width: 105%;
+    width: 100%;
     line-height: 33px;
 }
 .strengths-text-area3 {
     display: block;
     width: 50%;
+    margin-right: 44px;
     margin-top: 48px; 
     text-align: left; 
 }
@@ -238,19 +243,19 @@ a {
     font-size: 18px;
     text-align: left;
     font-weight: 500;
-    max-width: 395.5px;
     width: 100%;
     line-height: 33px;
 }
 .strengths-img-area {
-    max-width: 440px;
+    width: 55%;
     margin-bottom: 45px;
 }
 .strengths-img-area img {
+    max-width: 100%;
     width: 100%;
 }
 #service {
-    padding: 62px 100px 59px;
+    padding: 62px 0 59px;
     width: 100%;
 }
 .service-with-images {
@@ -301,7 +306,7 @@ a {
     margin-bottom: 12px;
 }
 #news {
-    padding: 63px 100px 67px;
+    padding: 63px 0 67px;
     width: 100%;
     background-color: rgba(13,150,160,0.102);
 }
@@ -325,7 +330,7 @@ a {
     padding: 0;
     margin: 0; 
     border-top: 1px solid #707070; 
-    max-width: 880px;
+    width: 100%;
     margin: 0 auto;
 }
 .news-item {
@@ -358,7 +363,7 @@ a {
     font-size: 17px;  
 }
 #access {
-    padding: 63px 100px 20px;
+    padding: 63px 0 70px;
     max-width: 100%;
 }
 .access-with-images {
@@ -383,45 +388,49 @@ a {
 .access-flex {
     display: flex;
     width: 100%;
-    max-width: 880px;
-    margin: 0 auto;   
+    max-width: 100%;
+    margin: 0 auto;  
+    gap: 40px;
+    align-items: stretch;
 }
 .access-img-area {
     width: 53%;
-    position: relative;
-    margin-bottom: 50px;
 }
 .access-img-area iframe {
     width: 100%;
-    height: 100%;
-    aspect-ratio: 440/295;
+    height: 300px;
+    display: block;
+    border: 0;
 }
 .access-text-area {
-    display: block;
     width: 47%;
-    margin-left: 46px;
-    margin-top: 0;  
+    box-sizing: border-box;
+    min-height: 300px;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.1); /* ←背景色を追加して目視チェック */
+}
+.access-text-area p {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.access-text-area hr {
+    padding: 5px;
 }
 .access-text-area h5 {
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .post {
     margin-right: 13px;
-    font-size: 18px;
-    font-weight: 500;
 }
 .address  {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
-    margin-bottom: 30px;
 }
 .tel {
     font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 18px;
 }
 .number {
     font-size: 25px;
@@ -430,17 +439,13 @@ a {
 }
 .mail {
     font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 27px;
 }
 .hr {
-    border: 1px solid#707070;
+    border: 1px solid #707070;
+    margin: 10px 0;
 }
 .time, .holiday {
     font-size: 18px;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 20px ;
     letter-spacing: 0.03em;
 }
 #contact {
@@ -593,7 +598,7 @@ input[type="submit"]:hover {
 }
 .footer_sns img {
     width: 22px;
-    height: 18px;
+    height: auto;
 }
 @media screen and (min-width:769px) {
     .pc_none{
@@ -603,8 +608,8 @@ input[type="submit"]:hover {
         padding: 50px 60px 60px;
     }
     .main_copy {
-        top:26%;
-        transform: translateY(-90%);
+        transform: translateY(-50%);
+        top: 53%;
     }
 }
 @media screen and (max-width:768px) {
@@ -613,9 +618,10 @@ input[type="submit"]:hover {
     }
     #container {
         font-size: 16px;
+        width: 100%;
         max-width: 100%;
     }
-    .container {
+    .inner {
         padding: 0 20px;
     }
     .title {
@@ -627,20 +633,15 @@ input[type="submit"]:hover {
     .nav_content {
         display: none;
     }
-    #main {
+    .main {
         width: 100%;
-        position: relative;
-        text-align: center;
     }
     .main img {
         width: 100%;
     }
     .main_copy {
-        width: 43%;
-        top: 56.6%;
-        transform: translateY(50%);
         padding: 12px 16px;
-        bottom: auto;  
+        bottom: 0;  
     }
     .main_copy p {
         font-size: 20px;
@@ -675,8 +676,8 @@ input[type="submit"]:hover {
         width: 68px;
         height: auto;
     }
-    #strengths {
-        padding: 50px 20px 0;  
+    .strengths {
+        padding: 40px 0 35px;  
     }
     .strengths-with-images {
         margin-bottom: 41px;
@@ -684,8 +685,8 @@ input[type="submit"]:hover {
     .strengths-item {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        margin-bottom: 35px;
+        width: 100%;
+        max-width: 100%;
     }
     .strengths-img-area {
         order: 1;
@@ -709,21 +710,23 @@ input[type="submit"]:hover {
     .strengths-text-area h4 {
         font-size: 20px;
         margin-bottom: 18px;
+        text-align: center;
     }
     .strengths-text-area p {
         font-size: 16px;
-        white-space: wrap;
+        margin-bottom: 42px;
         line-height: 1.8;
     }
     .strengths-text-area2 h4 {
         margin-left: 10px;
         font-size: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 13px;
     }
     .strengths-text-area2 p {
         font-size: 16px;
         white-space: wrap;
-        line-height: 1.8;   
+        line-height: 1.8;  
+        margin-bottom: 42px;
     }
     .strengths-text-area3 h4 {
         margin-left: 10px;
@@ -736,11 +739,8 @@ input[type="submit"]:hover {
         line-height: 1.8;
         margin-bottom: 30px;
     }
-    .br-sp {
-        display: inline;
-    }
     #service {
-        padding: 8px 20px 10px;
+        padding: 45px 0 39px;
     }
     .service-with-images {
         margin-bottom: 45px;
@@ -771,7 +771,7 @@ input[type="submit"]:hover {
         display: inline;
     }
     #news {
-        padding: 40px 20px 45px;
+        padding: 40px 0 45px;
     }   
     .news-with-images{
         margin-bottom: 40px;
@@ -779,7 +779,7 @@ input[type="submit"]:hover {
     .news-item {
         display: block;
         text-align: left;
-        padding: 29px 5px 25px;
+        padding: 29px 0 25px;
     }
     .news-date {
         margin-left: 8px;
@@ -801,7 +801,7 @@ input[type="submit"]:hover {
         font-size: 16px;
     }
     #access {
-        padding: 43px 20px 37px;
+        padding: 43px 0 37px;
     }
     .access-flex {
         display: block;
@@ -826,7 +826,7 @@ input[type="submit"]:hover {
         font-size: 25px;
     }
     #contact {
-        padding: 43px 20px 45px;
+        padding: 43px 0 45px;
     }
     .contact-with-images {
         margin-bottom: 42px;
@@ -866,7 +866,7 @@ input[type="submit"]:hover {
         height: 41px;
     } 
     .footer {
-        padding: 30px 20px 50px;
+        padding: 30px 0 50px;
     }
     .footer_copyright {
         font-size: 16px;
@@ -923,7 +923,7 @@ input[type="submit"]:hover {
     margin: 0 10px;
     vertical-align: middle;
 }
-@media screen and (min-width: 320px){
+@media screen and (max-width: 320px){
     .main_copy {
     width: 90%;
     top: 15.5%;

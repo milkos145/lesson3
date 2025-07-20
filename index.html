@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
@@ -61,9 +62,10 @@
         </div>     
     </section>
     <section id="strengths" class="bg-cyan">
+        <div class="inner">
             <div class="strengths-with-images">
                 <img src="images/niku.png" alt="アイコン" class="strengths-icon">
-                <h3>強み</h3>
+                <h2>強み</h2>
                 <img src="images/niku.png" alt="アイコン" class="strengths-icon">
             </div> 
             <div class="strengths-item">
@@ -105,11 +107,13 @@
                     </picture>
                 </div>    
             </div>
+        </div>
     </section>            
     <section id="service">
+        <div class="inner">
             <div class="service-with-images">
                 <img src="images/niku.png" alt="アイコン" class="service-icon">
-                <h3>サービス</h3>
+                <h2>サービス</h2>
                 <img src="images/niku.png" alt="アイコン" class="service-icon">
             </div> 
             <div class="service-list">
@@ -119,11 +123,8 @@
                         <source media="(min-width: 768px)" srcset="images/service01.jpg">
                         <img src="images/service01.jpg" alt="service01_img">
                     </picture>
-                    <p>往診サービス</p>
-                    <ul class="item-list">
-                        <li>シニアや介護などのペットのため</li>
-                        <li>の自宅で診療するサービスです。</li>
-                    </ul>
+                    <h3>往診サービス</h3>
+                    <p>シニアや介護などのペットのための自宅で診療するサービスです。</p>
                 </div>
                 <div class="service-content">
                     <picture>
@@ -131,11 +132,8 @@
                       <source media="(min-width: 768px)" srcset="images/service02.jpg">
                       <img src="images/service02.jpg" alt="service01_img">
                     </picture>
-                    <p>ペットホテル</p>
-                    <ul class="item-list">
-                        <li>短時間の一時預かりから宿泊まで</li>
-                        <li>ご利用いただけるサービスです。</li>
-                    </ul>
+                    <h3>ペットホテル</h3>
+                    <p>短時間の一時預かりから宿泊までご利用いただけるサービスです。</p>
                 </div>
                 <div class="service-content">
                     <picture>
@@ -143,15 +141,14 @@
                         <source media="(min-width: 769px)" srcset="images/service03.jpg">
                         <img src="images/service03.jpg" alt="service01_img">
                     </picture>
-                    <p>トリミング</p>
-                    <ul class="item-list">
-                         <li>動物の体に負担をかけない技術や</li>
-                         <li>液剤を使用いたします。</li>
-                    </ul>
+                    <h3>トリミング</h3>
+                    <p>動物の体に負担をかけない技術や液剤を使用いたします。</p>
                 </div>
             </div>
+        </div>
     </section>
     <section id="news" class="bg-cyan">
+        <div class="inner">
             <div class="news-with-images">
                 <img src="images/niku.png" alt="アイコン" class="news-icon">
                 <h3>お知らせ</h3>
@@ -184,8 +181,10 @@
                     <p class="news-text2">当院開院11周年を迎えることとなりました。</p>
                 </li>
             </ul>
+        </div>
     </section>
     <section id="access">
+        <div class="inner">
             <div class="access-with-images">
                 <img src="images/niku.png" alt="アイコン" class="access-icon">
                 <h3>アクセス</h3>
@@ -205,14 +204,16 @@
                     </p> 
                     <p class="tel">電話：<span class="number">000-0000-0000</span></p>
                     <p class="mail">メール：info@example.com</p>
-                    <hr>
+                    <hr class="hr">
                     <p class="time">診療時間：24時間365日</p>
                     <p class="holiday">休診日：なし</p>
                     <hr>
                 </div>                 
             </div>
+        </div>
     </section>
     <section id="contact" class="contact">
+        <div class="inner">
             <div class="contact-with-images">
                 <img src="images/niku.png" alt="アイコン" class="contact-icon">
                 <h3 class="section-title">お問い合わせ</h3>
@@ -245,6 +246,7 @@
                     </div> 
                 </form> 
             </div>  
+        </div>
     </section>
     <footer class="footer">
         <div class="inner">
