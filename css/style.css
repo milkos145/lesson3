@@ -608,8 +608,8 @@ input[type="submit"]:hover {
         padding: 50px 60px 60px;
     }
     .main_copy {
-        transform: translateY(-50%);
-        top: 53%;
+        top:50%;
+        transform: translateY(-120%);
     }
 }
 @media screen and (max-width:768px) {
@@ -676,8 +676,8 @@ input[type="submit"]:hover {
         width: 68px;
         height: auto;
     }
-    .strengths {
-        padding: 40px 0 35px;  
+    #tsuyomi {
+        padding: 50px 20px 0;  
     }
     .strengths-with-images {
         margin-bottom: 41px;
