@@ -106,8 +106,8 @@ a {
     color: #c08c5c; 
 }
 .main {
-    width: 100%;  
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 50px; 
     position: relative;
 }
 .main img {
@@ -183,8 +183,8 @@ a {
 }
 .strengths-item {
     display: flex;
-    width: 100%;
-
+    max-width: 880px;
+    margin: 0 auto;
     justify-content: flex-start;
 }
 .strengths-item.reverse {
@@ -193,7 +193,7 @@ a {
 .strengths-text-area {
     display: block;
     width: 50%;
-    margin-right: 44px;
+    margin-right: 45px;
     margin-top: 48px;  
 }
 .strengths-text-area h4 {
@@ -206,52 +206,51 @@ a {
     text-align: left;
     font-weight: 500;
     line-height: 33px;
-    width: 100%;
 }
 .strengths-text-area2 {
     display: block;
     width: 50%;
-    margin-left:40px;
+    margin-left: 47px;
     margin-top: 48px; 
     text-align: left; 
 }
 .strengths-text-area2 h4 {
     font-weight: 700; 
     font-size: 22px;
-    margin-bottom: 19px;
+    margin-bottom: 21px;
 }
 .strengths-text-area2 p {
     font-size: 18px;
     text-align: left;
     font-weight: 500;
-    width: 100%;
+    width: 105%;
     line-height: 33px;
 }
 .strengths-text-area3 {
     display: block;
     width: 50%;
-    margin-right: 44px;
     margin-top: 48px; 
     text-align: left; 
+    margin-right: 45px;
 }
 .strengths-text-area3 h4 {
     font-weight: 700; 
     font-size: 22px;
-    margin-bottom: 19px;
+    margin-bottom: 21px;
 }
 .strengths-text-area3 p {
     font-size: 18px;
     text-align: left;
     font-weight: 500;
+    max-width: 395.5px;
     width: 100%;
     line-height: 33px;
 }
 .strengths-img-area {
-    width: 55%;
+    max-width: 440px;
     margin-bottom: 45px;
 }
 .strengths-img-area img {
-    max-width: 100%;
     width: 100%;
 }
 #service {
@@ -268,7 +267,7 @@ a {
 .service-icon {
     width: 25.49px;
 }
-.service-with-images h3 {
+.service-with-images h2 {
     margin: 0;
     font-size: 25px;
 }
@@ -283,12 +282,18 @@ a {
 .service-content:not(:last-of-type) {
     margin-right: 50px;
 }
-.service-content p {
+.service-content h3 {
     width: 100%;
     font-size: 20px;
     font-weight: 700;
     margin: 0;
     text-align: center;
+    margin-bottom: 10px;
+}
+.service-content p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
 }
 .item-list {
     font-size: 17px;
@@ -306,7 +311,7 @@ a {
     margin-bottom: 12px;
 }
 #news {
-    padding: 63px 0 67px;
+    padding: 63px 100px 67px;
     width: 100%;
     background-color: rgba(13,150,160,0.102);
 }
@@ -330,7 +335,7 @@ a {
     padding: 0;
     margin: 0; 
     border-top: 1px solid #707070; 
-    width: 100%;
+    max-width: 880px;
     margin: 0 auto;
 }
 .news-item {
@@ -363,7 +368,7 @@ a {
     font-size: 17px;  
 }
 #access {
-    padding: 63px 0 70px;
+    padding: 63px 100px 20px;
     max-width: 100%;
 }
 .access-with-images {
@@ -387,50 +392,48 @@ a {
 }
 .access-flex {
     display: flex;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;  
-    gap: 40px;
-    align-items: stretch;
+    max-width: 880px;
+    margin: 0 auto;   
+    align-items: flex-start;
 }
 .access-img-area {
     width: 53%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 50px;
 }
 .access-img-area iframe {
     width: 100%;
-    height: 300px;
-    display: block;
+    height: 100%;
     border: 0;
+    aspect-ratio: 440/295;
 }
 .access-text-area {
     width: 47%;
-    box-sizing: border-box;
-    min-height: 300px;
-    padding: 20px;
-    background-color: rgba(255, 0, 0, 0.1); /* ←背景色を追加して目視チェック */
-}
-.access-text-area p {
-    margin: 0 0 10px;
-    font-size: 18px;
-    font-weight: 500;
-}
-.access-text-area hr {
-    padding: 5px;
+    height: auto;
+    margin-left: 46px;
+
 }
 .access-text-area h5 {
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .post {
     margin-right: 13px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .address  {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
+    margin-bottom: 30px;
 }
 .tel {
     font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 18px;
 }
 .number {
     font-size: 25px;
@@ -439,14 +442,27 @@ a {
 }
 .mail {
     font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 .hr {
     border: 1px solid #707070;
-    margin: 10px 0;
 }
-.time, .holiday {
-    font-size: 18px;
-    letter-spacing: 0.03em;
+.hr,hr {
+    margin: 20px 0;
+}
+.time,
+.holiday {
+    display: block;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+.time {
+  margin-bottom: 30px;
+}
+.holiday {
+  margin-bottom: 30px; /* 次の<hr>との間隔も調整したい場合 */
 }
 #contact {
     padding: 62px 100px 80px;
@@ -608,8 +624,8 @@ input[type="submit"]:hover {
         padding: 50px 60px 60px;
     }
     .main_copy {
-        top:50%;
-        transform: translateY(-120%);
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 @media screen and (max-width:768px) {
@@ -618,10 +634,9 @@ input[type="submit"]:hover {
     }
     #container {
         font-size: 16px;
-        width: 100%;
         max-width: 100%;
     }
-    .inner {
+    .container {
         padding: 0 20px;
     }
     .title {
@@ -676,7 +691,7 @@ input[type="submit"]:hover {
         width: 68px;
         height: auto;
     }
-    #tsuyomi {
+    #strengths {
         padding: 50px 20px 0;  
     }
     .strengths-with-images {
@@ -685,8 +700,8 @@ input[type="submit"]:hover {
     .strengths-item {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        max-width: 100%;
+        text-align: center;
+        margin-bottom: 35px;
     }
     .strengths-img-area {
         order: 1;
@@ -710,23 +725,21 @@ input[type="submit"]:hover {
     .strengths-text-area h4 {
         font-size: 20px;
         margin-bottom: 18px;
-        text-align: center;
     }
     .strengths-text-area p {
         font-size: 16px;
-        margin-bottom: 42px;
+        white-space: wrap;
         line-height: 1.8;
     }
     .strengths-text-area2 h4 {
         margin-left: 10px;
         font-size: 20px;
-        margin-bottom: 13px;
+        margin-bottom: 10px;
     }
     .strengths-text-area2 p {
         font-size: 16px;
         white-space: wrap;
-        line-height: 1.8;  
-        margin-bottom: 42px;
+        line-height: 1.8;   
     }
     .strengths-text-area3 h4 {
         margin-left: 10px;
@@ -739,8 +752,11 @@ input[type="submit"]:hover {
         line-height: 1.8;
         margin-bottom: 30px;
     }
+    .br-sp {
+        display: inline;
+    }
     #service {
-        padding: 45px 0 39px;
+        padding: 8px 20px 10px;
     }
     .service-with-images {
         margin-bottom: 45px;
@@ -771,7 +787,7 @@ input[type="submit"]:hover {
         display: inline;
     }
     #news {
-        padding: 40px 0 45px;
+        padding: 40px 20px 45px;
     }   
     .news-with-images{
         margin-bottom: 40px;
@@ -779,7 +795,7 @@ input[type="submit"]:hover {
     .news-item {
         display: block;
         text-align: left;
-        padding: 29px 0 25px;
+        padding: 29px 5px 25px;
     }
     .news-date {
         margin-left: 8px;
@@ -801,7 +817,7 @@ input[type="submit"]:hover {
         font-size: 16px;
     }
     #access {
-        padding: 43px 0 37px;
+        padding: 43px 20px 37px;
     }
     .access-flex {
         display: block;
@@ -826,7 +842,7 @@ input[type="submit"]:hover {
         font-size: 25px;
     }
     #contact {
-        padding: 43px 0 45px;
+        padding: 43px 20px 45px;
     }
     .contact-with-images {
         margin-bottom: 42px;
@@ -866,7 +882,7 @@ input[type="submit"]:hover {
         height: 41px;
     } 
     .footer {
-        padding: 30px 0 50px;
+        padding: 30px 20px 50px;
     }
     .footer_copyright {
         font-size: 16px;
