@@ -607,6 +607,9 @@ input[type="submit"]:hover {
     .pc_none{
         display: none!important;
     }
+    .inner {
+        padding: 0 20px;
+    }
     .massage {
         padding: 50px 60px 60px;
     }
@@ -614,6 +617,7 @@ input[type="submit"]:hover {
         top: 50%;
         transform: translateY(-50%);
     }
+    
 }
 @media screen and (max-width:768px) {
     .sp_none{
@@ -693,6 +697,7 @@ input[type="submit"]:hover {
         flex-direction: column;
         text-align: center;
         margin-bottom: 35px;
+        width: 100%;
     }
     .strengths-img-area {
         order: 1;
@@ -705,6 +710,7 @@ input[type="submit"]:hover {
     .strengths-img-area img {
         display: block;
         margin: 0 auto;
+        width: 100%;
     }
     .strengths-text-area,
     .strengths-text-area2,
@@ -714,6 +720,7 @@ input[type="submit"]:hover {
         margin: 0 0 10px;
     }
     .strengths-text-area h4 {
+        margin-left: 10px;
         font-size: 20px;
         margin-bottom: 18px;
     }
