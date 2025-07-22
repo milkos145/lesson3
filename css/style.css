@@ -368,7 +368,7 @@ a {
     font-size: 17px;  
 }
 #access {
-    padding: 63px 100px 20px;
+    padding: 63px 100px 80px;
     max-width: 100%;
 }
 .access-with-images {
@@ -392,48 +392,54 @@ a {
 }
 .access-flex {
     display: flex;
-    max-width: 880px;
+
+    width: 100%;
     margin: 0 auto;   
-    align-items: flex-start;
 }
 .access-img-area {
     width: 53%;
-    height: 100%;
-    position: relative;
-    margin-bottom: 50px;
+    max-width: 440px;
 }
 .access-img-area iframe {
     width: 100%;
     height: 100%;
-    border: 0;
-    aspect-ratio: 440/295;
 }
 .access-text-area {
-    width: 47%;
-    height: auto;
+    max-width: 390px;
     margin-left: 46px;
-
+    width: 47%;
 }
-.access-text-area h5 {
-    font-size: 22px;
+.access-text-area h5. {
+    font-size: 25px;
     font-weight: 700;
-    margin-bottom: 15px;
+  
+}
+.address-text {
+    line-height: 1.7;
 }
 .post {
-    margin-right: 13px;
-    font-size: 18px;
+    margin-right: 18px;
+    font-size: 30px;
     font-weight: 500;
 }
 .address  {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 30px;
+    font-size: 32px;
+    
+}
+.access-hours {
+    border-top: solid 1px #707070;
+    border-bottom: solid 1px #707070;
+    padding: 15px 0 14px;
+    margin-top: 27px;
+}
+.access-hours p {
+    line-height: 2.5;
+    margin: 0;
 }
 .tel {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 18px;
+    margin: 14px 0 8px;
 }
 .number {
     font-size: 25px;
@@ -443,29 +449,10 @@ a {
 .mail {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 30px;
-}
-.hr {
-    border: 1px solid #707070;
-}
-.hr,hr {
-    margin: 20px 0;
-}
-.time,
-.holiday {
-    display: block;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-}
-.time {
-  margin-bottom: 30px;
-}
-.holiday {
-  margin-bottom: 30px; /* 次の<hr>との間隔も調整したい場合 */
+
 }
 #contact {
-    padding: 62px 100px 80px;
+    padding: 62px 100px 83px;
     background-color: rgba(13,150,160,0.102);
     width: 100%;
 }
@@ -639,6 +626,9 @@ input[type="submit"]:hover {
     .container {
         padding: 0 20px;
     }
+    .inner {
+        padding: 0 20px;
+    }
     .title {
         margin-left: 0;
     }
@@ -655,11 +645,12 @@ input[type="submit"]:hover {
         width: 100%;
     }
     .main_copy {
-        padding: 12px 16px;
+        padding: 13px 17px;
         bottom: 0;  
     }
     .main_copy p {
         font-size: 20px;
+        margin-top: 5px;
         margin-bottom: 7px;
     }
     .main_copy h1 {
@@ -692,7 +683,7 @@ input[type="submit"]:hover {
         height: auto;
     }
     #strengths {
-        padding: 50px 20px 0;  
+        padding: 50px 0 0;  
     }
     .strengths-with-images {
         margin-bottom: 41px;
@@ -750,13 +741,12 @@ input[type="submit"]:hover {
         font-size: 16px;
         white-space: wrap;
         line-height: 1.8;
-        margin-bottom: 30px;
     }
     .br-sp {
         display: inline;
     }
     #service {
-        padding: 8px 20px 10px;
+        padding: 45px 0 0;
     }
     .service-with-images {
         margin-bottom: 45px;
@@ -765,9 +755,14 @@ input[type="submit"]:hover {
         display: block;
         flex-direction: column;
         gap: 20px;
+        width: 100%;
     }
     .service-content {
         width: 100%;
+    }
+    .service-content h3 {
+        font-size: 20px;
+
     }
     .service-content img {
         margin-bottom: 25px;
@@ -776,8 +771,8 @@ input[type="submit"]:hover {
         object-fit: cover;
     }
     .service-content p {
-        margin-bottom: 7px;
-        font-size: 20px;
+        margin-bottom: 35px;
+        font-size: 16px;
     }
     .item-list {
         margin-bottom: 39px;
@@ -787,7 +782,7 @@ input[type="submit"]:hover {
         display: inline;
     }
     #news {
-        padding: 40px 20px 45px;
+        padding: 45px 20px 45px;
     }   
     .news-with-images{
         margin-bottom: 40px;
@@ -795,7 +790,7 @@ input[type="submit"]:hover {
     .news-item {
         display: block;
         text-align: left;
-        padding: 29px 5px 25px;
+        padding: 30px 5px 25px;
     }
     .news-date {
         margin-left: 8px;
@@ -817,7 +812,7 @@ input[type="submit"]:hover {
         font-size: 16px;
     }
     #access {
-        padding: 43px 20px 37px;
+        padding: 43px 20px 50px;
     }
     .access-flex {
         display: block;
@@ -840,6 +835,10 @@ input[type="submit"]:hover {
     }
     .number {
         font-size: 25px;
+    }
+    .access-hours {
+        margin-top: 10px;
+        padding: 5px 0 5px 0;
     }
     #contact {
         padding: 43px 20px 45px;
@@ -882,17 +881,14 @@ input[type="submit"]:hover {
         height: 41px;
     } 
     .footer {
-        padding: 30px 20px 50px;
-    }
-    .footer_copyright {
-        font-size: 16px;
-        margin-top: 20px;
+        padding: 30px 0 50px;
     }
     .footer-nav_lists {
         flex-wrap: wrap; 
         justify-content: center; 
         row-gap: 10px;
-        padding: 16px 13px; 
+        padding: 16px 0 20px; 
+        line-height: 23px;
     }
     .footer-nav_list a {
         font-size: 18px;
@@ -900,6 +896,11 @@ input[type="submit"]:hover {
     }
     .footer_sns {
         margin-top: 40px;
+    }
+    .footer_copyright {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 20px;
     }
 }
 .access-text-area {
