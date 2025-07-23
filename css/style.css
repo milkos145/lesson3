@@ -409,7 +409,7 @@ a {
     margin-left: 46px;
     width: 47%;
 }
-.access-text-area h5. {
+.access-text-area h5 {
     font-size: 25px;
     font-weight: 700;
   
@@ -617,7 +617,11 @@ input[type="submit"]:hover {
         top: 50%;
         transform: translateY(-50%);
     }
-    
+    .news-list {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
 }
 @media screen and (max-width:768px) {
     .sp_none{
@@ -632,6 +636,8 @@ input[type="submit"]:hover {
     }
     .inner {
         padding: 0 20px;
+        margin: 0 auto;
+        max-width: 100%;
     }
     .title {
         margin-left: 0;
@@ -698,19 +704,21 @@ input[type="submit"]:hover {
         text-align: center;
         margin-bottom: 35px;
         width: 100%;
+        align-items: center;
     }
     .strengths-img-area {
         order: 1;
         width: 100%;
         margin-bottom: 23px;
-        display: block;
+        display: flex;
         justify-content: center;
-        text-align: center;
+
     }
     .strengths-img-area img {
         display: block;
         margin: 0 auto;
         width: 100%;
+   
     }
     .strengths-text-area,
     .strengths-text-area2,
@@ -718,6 +726,7 @@ input[type="submit"]:hover {
         order: 2;
         width: 100%;
         margin: 0 0 10px;
+        text-align: center;
     }
     .strengths-text-area h4 {
         margin-left: 10px;
@@ -728,6 +737,7 @@ input[type="submit"]:hover {
         font-size: 16px;
         white-space: wrap;
         line-height: 1.8;
+        text-align: center;
     }
     .strengths-text-area2 h4 {
         margin-left: 10px;
@@ -737,7 +747,8 @@ input[type="submit"]:hover {
     .strengths-text-area2 p {
         font-size: 16px;
         white-space: wrap;
-        line-height: 1.8;   
+        line-height: 1.8;  
+        text-align: center; 
     }
     .strengths-text-area3 h4 {
         margin-left: 10px;
@@ -748,6 +759,7 @@ input[type="submit"]:hover {
         font-size: 16px;
         white-space: wrap;
         line-height: 1.8;
+        text-align: center;
     }
     .br-sp {
         display: inline;
