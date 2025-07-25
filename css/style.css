@@ -419,7 +419,6 @@ a {
 .access-text-area h5 {
     font-size: 1.5625rem;
     font-weight: 700;
-  
 }
 .address-text {
     line-height: 1.7;
@@ -431,7 +430,6 @@ a {
 }
 .address  {
     font-size: 2rem;
-    
 }
 .access-hours {
     border-top: solid 1px #707070;
@@ -456,7 +454,6 @@ a {
 .mail {
     font-size: 1.125rem;
     font-weight: 500;
-
 }
 #contact {
     padding: 62px 100px 83px;
@@ -479,7 +476,6 @@ a {
 }
 .desc {
     margin-top: 25px;
-    
 }
 .section-desc {
     font-size: 1.0625rem;
@@ -816,7 +812,6 @@ input[type="submit"]:hover {
         white-space: nowrap;
         font-size: 1rem;
         margin-bottom: 5px;
-
     }
     #access {
         padding: 43px 20px 50px;
