@@ -15,7 +15,12 @@ p,h1,h2,h3,h4,h5,a {
     margin: 0;
     color: #505050;
 }
-.img, iframe {
+.img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+} 
+.iframe {
     max-width: 100%;
     height: auto;  
 }
@@ -27,7 +32,7 @@ a {
     align-items: center;
 }
 .container {
-    font-size: 14px;
+    font-size: 0.875rem;
     max-width: 1080px;
     padding: 0 30px;
     margin: 0 auto;
@@ -40,7 +45,7 @@ a {
 }
 .header {
     width: 100%;
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color: #fff;
     height: 50px;
     position: fixed;
@@ -61,7 +66,7 @@ a {
     margin-right: 8px;
 }
 .title {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     color: #505050;   
     text-decoration: none;
@@ -120,14 +125,16 @@ a {
     position: absolute;
     left: 0;
     padding: 23px 35px 23px 99px;
+    top: 50%;
+    transform:translateY(-50%);
 }
 .main_copy p {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
     margin-bottom: 8px;
 }
 .main_copy h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #0D96A0;
     line-height: 1.5;
     font-weight: 700;
@@ -144,14 +151,14 @@ a {
 }
 .message h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
     color: #0D96A0;
     padding-bottom: 20px;
 }
 .message p {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #505050; 
     line-height: 33px;
 }
@@ -178,7 +185,7 @@ a {
 }    
 .strengths-with-images h3 {
     margin: 0;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
 }
 .strengths-item {
@@ -198,11 +205,11 @@ a {
 }
 .strengths-text-area h4 {
     font-weight: 700; 
-    font-size: 22px;
+    font-size:1.375rem;
     margin-bottom: 19px;
 }
 .strengths-text-area p {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: left;
     font-weight: 500;
     line-height: 33px;
@@ -216,11 +223,11 @@ a {
 }
 .strengths-text-area2 h4 {
     font-weight: 700; 
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-bottom: 21px;
 }
 .strengths-text-area2 p {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: left;
     font-weight: 500;
     width: 105%;
@@ -235,11 +242,11 @@ a {
 }
 .strengths-text-area3 h4 {
     font-weight: 700; 
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-bottom: 21px;
 }
 .strengths-text-area3 p {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: left;
     font-weight: 500;
     max-width: 395.5px;
@@ -269,7 +276,7 @@ a {
 }
 .service-with-images h2 {
     margin: 0;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 .service-list {
     display: flex;
@@ -284,19 +291,19 @@ a {
 }
 .service-content h3 {
     width: 100%;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     margin: 0;
     text-align: center;
     margin-bottom: 10px;
 }
 .service-content p {
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 500;
     line-height: 30px;
 }
 .item-list {
-    font-size: 17px;
+    font-size: 1.0625rem;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
@@ -324,7 +331,7 @@ a {
 }
 .news-with-images h3 {
     margin: 0;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
 }
 .news-icon {
@@ -348,7 +355,7 @@ a {
     color: #505050;
     font-weight: 700;
     margin-left: 19px;
-    font-size: 18px;
+    font-size: 1.125rem;
     transform: scale(1, 0.9); 
     
 }
@@ -357,7 +364,7 @@ a {
     font-weight: 700;
     text-decoration: none;
     margin-left: 40px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .news-text,
 .news-text2 {
@@ -365,7 +372,7 @@ a {
     font-weight: 500;
     margin-left: 49px;
     text-align: left;
-    font-size: 17px;  
+    font-size: 1.0625rem;  
 }
 #access {
     padding: 63px 100px 80px;
@@ -380,7 +387,7 @@ a {
 }
 .access-with-images h3 {
     margin: 0;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
 }
 .access-icon {
@@ -388,7 +395,7 @@ a {
 }
 .access-with-images p {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .access-flex {
     display: flex;
@@ -410,7 +417,7 @@ a {
     width: 47%;
 }
 .access-text-area h5 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
   
 }
@@ -419,11 +426,11 @@ a {
 }
 .post {
     margin-right: 18px;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 500;
 }
 .address  {
-    font-size: 32px;
+    font-size: 2rem;
     
 }
 .access-hours {
@@ -437,17 +444,17 @@ a {
     margin: 0;
 }
 .tel {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     margin: 14px 0 8px;
 }
 .number {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
     color: #0D96A0;  
 }
 .mail {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
 
 }
@@ -464,7 +471,7 @@ a {
 }
 .contact-with-images h3 {
     margin: 0;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
 }
 .contact-icon {
@@ -475,7 +482,7 @@ a {
     
 }
 .section-desc {
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 500;
     color: #505050;
     line-height: 30px;
@@ -493,7 +500,7 @@ a {
     margin: 0 auto;
 }
 .form_label {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     width: 160px;
     color: #505050;  
@@ -506,7 +513,7 @@ input[type="email"] {
     width: 100%;
     max-width: 711px;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 4px;
     margin-inline: auto;
     margin-bottom: 30px;
@@ -534,7 +541,7 @@ input[type="submit"] {
     background-color: #0D96A0;
     color: #fff;
     border: 1px solid #0D96A0;
-    font-size: 25px;
+    font-size: 1.5625rem;
     cursor: pointer;
     transition: .4s;
     padding: 0;
@@ -571,12 +578,12 @@ input[type="submit"]:hover {
 }
 .footer-nav_link {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 .footer_copyright {
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 30px;
     font-weight: 700; 
 }
@@ -603,32 +610,12 @@ input[type="submit"]:hover {
     width: 22px;
     height: auto;
 }
-@media screen and (min-width:769px) {
-    .pc_none{
-        display: none!important;
-    }
-    .inner {
-        padding: 0 20px;
-    }
-    .massage {
-        padding: 50px 60px 60px;
-    }
-    .main_copy {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .news-list {
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
-    }
-}
 @media screen and (max-width:768px) {
     .sp_none{
         display: none!important;
     }
     #container {
-        font-size: 16px;
+        font-size: 1rem;
         max-width: 100%;
     }
     .container {
@@ -643,7 +630,7 @@ input[type="submit"]:hover {
         margin-left: 0;
     }
     .header-title{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .nav_content {
         display: none;
@@ -657,14 +644,16 @@ input[type="submit"]:hover {
     .main_copy {
         padding: 13px 17px;
         bottom: 0;  
+        top: 70%;
+        transform: translateY(0);
     }
     .main_copy p {
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-top: 5px;
         margin-bottom: 7px;
     }
     .main_copy h1 {
-        font-size: 29.5px;
+        font-size: 1.84375rem;
     }
     .br-sp {
         display: inline;
@@ -677,10 +666,10 @@ input[type="submit"]:hover {
         padding: 50px 0 40px;
     }
     .message h2 {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
     .message p {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
         text-align: left;
         line-height: 1.8;
@@ -700,16 +689,17 @@ input[type="submit"]:hover {
     }
     .strengths-item {
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 35px;
-        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        column-gap: calc(45 / 880 * 100%);
         align-items: center;
+        flex-direction: column;
     }
     .strengths-img-area {
         order: 1;
+        max-width: 100%;
         width: 100%;
-        margin-bottom: 23px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: center;
 
@@ -718,7 +708,6 @@ input[type="submit"]:hover {
         display: block;
         margin: 0 auto;
         width: 100%;
-   
     }
     .strengths-text-area,
     .strengths-text-area2,
@@ -727,39 +716,37 @@ input[type="submit"]:hover {
         width: 100%;
         margin: 0 0 10px;
         text-align: center;
+        flex: 1;
     }
     .strengths-text-area h4 {
-        margin-left: 10px;
-        font-size: 20px;
-        margin-bottom: 18px;
+        font-size: 1.25rem;
+        margin-bottom: 10px;
     }
     .strengths-text-area p {
-        font-size: 16px;
+        font-size: 1rem;
         white-space: wrap;
         line-height: 1.8;
-        text-align: center;
+        text-align: left;
     }
     .strengths-text-area2 h4 {
-        margin-left: 10px;
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 10px;
     }
     .strengths-text-area2 p {
-        font-size: 16px;
+        font-size: 1rem;
         white-space: wrap;
         line-height: 1.8;  
-        text-align: center; 
+        text-align: left; 
     }
     .strengths-text-area3 h4 {
-        margin-left: 10px;
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 10px;
     }
     .strengths-text-area3 p {
-        font-size: 16px;
+        font-size: 1rem;
         white-space: wrap;
         line-height: 1.8;
-        text-align: center;
+        text-align: left;
     }
     .br-sp {
         display: inline;
@@ -780,8 +767,7 @@ input[type="submit"]:hover {
         width: 100%;
     }
     .service-content h3 {
-        font-size: 20px;
-
+        font-size: 1.25rem;
     }
     .service-content img {
         margin-bottom: 25px;
@@ -791,11 +777,11 @@ input[type="submit"]:hover {
     }
     .service-content p {
         margin-bottom: 35px;
-        font-size: 16px;
+        font-size: 1rem;
     }
     .item-list {
         margin-bottom: 39px;
-        font-size: 16px;
+        font-size: 1rem;
     }
     .item-list li {
         display: inline;
@@ -804,31 +790,36 @@ input[type="submit"]:hover {
         padding: 45px 20px 45px;
     }   
     .news-with-images{
-        margin-bottom: 40px;
+        margin-bottom: 45px;
     }
     .news-item {
         display: block;
         text-align: left;
-        padding: 30px 5px 25px;
     }
     .news-date {
         margin-left: 8px;
-        font-size: 17px;
+        font-size: 1.0625rem;
+
     }
     .news-title {
         margin-left: 8px;
-        margin-top: 1px;
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
     .news-text {
         margin-left: 8px;
         margin-top: 5px;
-        font-size: 16px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+        width: 95%;
     }
     .news-text2 {
         margin-left: 8px;
         margin-top: 5px;
         white-space: nowrap;
-        font-size: 16px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+
     }
     #access {
         padding: 43px 20px 50px;
@@ -853,7 +844,7 @@ input[type="submit"]:hover {
         aspect-ratio: 335 / 222;
     }
     .number {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
     .access-hours {
         margin-top: 10px;
@@ -866,7 +857,7 @@ input[type="submit"]:hover {
         margin-bottom: 42px;
     }
     .section-desc {
-        font-size: 16px;
+        font-size: 1rem;
         text-align: left;
         margin-bottom: 32px;
     }
@@ -875,7 +866,7 @@ input[type="submit"]:hover {
         margin-top: -5px;
     }
     .form_label {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     input[type="text"]{
         width: 100%;
@@ -896,7 +887,7 @@ input[type="submit"]:hover {
     }
     .contact_button input[type="submit"] {
         padding: 1px 0;
-        font-size: 20px;
+        font-size: 1.25rem;
         height: 41px;
     } 
     .footer {
@@ -910,14 +901,14 @@ input[type="submit"]:hover {
         line-height: 23px;
     }
     .footer-nav_list a {
-        font-size: 18px;
+        font-size: 1.125rem;
         margin-bottom: 3px;
     }
     .footer_sns {
         margin-top: 40px;
     }
     .footer_copyright {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         margin-top: 20px;
     }
@@ -926,17 +917,17 @@ input[type="submit"]:hover {
     font-family: "Noto Sans JP", sans-serif;
 }
 .access-text-area p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
     margin: 5px 0 8px 0;
     letter-spacing: 0;
 }
 .access-text-area .address,
 .access-text-area .post {
-    font-size: 16px;
+    font-size: 1rem;
 }
 .access-text-area .number {
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 1.6;
 }
 .access-text-area hr {
@@ -945,7 +936,7 @@ input[type="submit"]:hover {
     border-top: 1px solid #ccc;
 }
 .access-text-area h5.clinic-name {
-    font-size: 22px;
+    font-size: 1.375rem ;
     margin: 0 0 13px 0;
 }
 .access-with-images img {
@@ -954,7 +945,7 @@ input[type="submit"]:hover {
     vertical-align: middle;
 }
 .access-with-images h3 {
-    font-size: 24px;
+    font-size: 1.5rem ;
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
@@ -968,11 +959,11 @@ input[type="submit"]:hover {
     bottom: auto;  
   }
   .main_copy p {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 7px;
   }
   .main_copy h1 {
-    font-size: 29.5px;
+    font-size: 1.84375rem;
   }
 }
 body, input, textarea, button, select {
