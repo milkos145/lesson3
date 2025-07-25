@@ -249,8 +249,8 @@ a {
     font-size: 1.125rem;
     text-align: left;
     font-weight: 500;
-    max-width: 395.5px;
-    width: 100%;
+   
+    width: 103%;
     line-height: 33px;
 }
 .strengths-img-area {
@@ -454,6 +454,7 @@ a {
 .mail {
     font-size: 1.125rem;
     font-weight: 500;
+
 }
 #contact {
     padding: 62px 100px 83px;
@@ -476,6 +477,7 @@ a {
 }
 .desc {
     margin-top: 25px;
+    
 }
 .section-desc {
     font-size: 1.0625rem;
@@ -812,6 +814,7 @@ input[type="submit"]:hover {
         white-space: nowrap;
         font-size: 1rem;
         margin-bottom: 5px;
+
     }
     #access {
         padding: 43px 20px 50px;
