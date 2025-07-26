@@ -149,6 +149,9 @@ a {
 .br-sp {
     display: none;
 }
+.br-pc {
+    display: block;
+}
 .message h2 {
     text-align: center;
     font-size: 1.875rem;
@@ -249,9 +252,11 @@ a {
     font-size: 1.125rem;
     text-align: left;
     font-weight: 500;
-   
-    width: 103%;
+    width: 101%;
     line-height: 33px;
+}
+.nowrap {
+    white-space: nowrap;
 }
 .strengths-img-area {
     max-width: 440px;
