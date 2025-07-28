@@ -164,6 +164,7 @@ a {
     font-size: 1.125rem;
     color: #505050; 
     line-height: 33px;
+    font-weight: 500;
 }
 .message img {
     width: 83.75px;
@@ -437,14 +438,15 @@ a {
     font-size: 2rem;
 }
 .access-hours {
-    border-top: solid 1px #505050;
-    border-bottom: solid 1px #505050;
+    border-top: solid 1px #707070;
+    border-bottom: solid 1px #707070;
     padding: 15px 0 14px;
     margin-top: 27px;
 }
 .access-hours p {
     line-height: 2.5;
     margin: 0;
+    font-weight: 500;
 }
 .tel {
     font-size: 1.125rem;
@@ -550,6 +552,7 @@ input[type="submit"] {
     padding: 0;
     border-radius: 0.7rem;
     font-family: "Noto Sans JP",sans-serif;
+    font-weight: 700;
 }
 input[type="submit"]:hover {
     color: #000;
