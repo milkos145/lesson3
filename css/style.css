@@ -110,12 +110,12 @@ a {
 .header-title:hover {
     color: #c08c5c; 
 }
-.main {
+.fv {
     width: 100%;
     margin-top: 50px; 
     position: relative;
 }
-.main img {
+.fv img {
     width: 100%;
     vertical-align: bottom;
     height: auto;
@@ -129,6 +129,7 @@ a {
     transform:translateY(-48%);
     width: 100%;
     max-width: 492px;
+    height: 210px;
     box-sizing: border-box;
 }
 .main_copy p {
@@ -166,7 +167,7 @@ a {
     text-align: center;
     font-size: 1.125rem;
     color: #505050; 
-    line-height: 33px;
+    line-height: 1.8;
     font-weight: 500;
 }
 .message img {
@@ -208,7 +209,7 @@ a {
     display: block;
     width: 50%;
     margin-right: 45px;
-    margin-top: 48px;  
+
 }
 .strengths-text-area h4 {
     font-weight: 700; 
@@ -219,7 +220,7 @@ a {
     font-size: 1.125rem;
     text-align: left;
     font-weight: 500;
-    line-height: 33px;
+    line-height: 1.8;
 }
 .strengths-text-area2 {
     display: block;
@@ -238,7 +239,7 @@ a {
     text-align: left;
     font-weight: 500;
     width: 105%;
-    line-height: 33px;
+    line-height: 1.8;
 }
 .strengths-text-area3 {
     display: block;
@@ -257,7 +258,7 @@ a {
     text-align: left;
     font-weight: 500;
     width: 101%;
-    line-height: 33px;
+    line-height: 1.8;
 }
 .nowrap {
     white-space: nowrap;
@@ -309,14 +310,13 @@ a {
 .service-content p {
     font-size: 1.0625rem;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.7;
 }
-.item-list {
+.service-list {
     font-size: 1.0625rem;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-    line-height: 30px;
     margin-top: 5px;
     font-weight: 500;
     text-align: left;
@@ -327,7 +327,7 @@ a {
     margin-bottom: 12px;
 }
 #news {
-    padding: 63px 100px 67px;
+    padding: 63px 0 67px;
     width: 100%;
     background-color: rgba(13,150,160,0.102);
 }
@@ -351,8 +351,6 @@ a {
     padding: 0;
     margin: 0; 
     border-top: 1px solid #707070; 
-    max-width: 880px;
-    margin: 0 auto;
 }
 .news-item {
     padding: 15px 0;
@@ -384,7 +382,7 @@ a {
     font-size: 1.0625rem;  
 }
 #access {
-    padding: 63px 100px 80px;
+    padding: 63px 0 80px;
     max-width: 100%;
 }
 .access-with-images {
@@ -409,8 +407,7 @@ a {
 .access-flex {
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: 0 auto;   
+    width: 100%; 
 }
 .access-img-area {
     width: 53%;
@@ -429,9 +426,6 @@ a {
     font-size: 1.5625rem;
     font-weight: 700;
 }
-.address-text {
-    line-height: 1.7;
-}
 .post {
     margin-right: 18px;
     font-size: 1.875rem;
@@ -447,7 +441,7 @@ a {
     margin-top: 27px;
 }
 .access-hours p {
-    line-height: 2.5;
+    line-height: 2.2;
     margin: 0;
     font-weight: 500;
 }
@@ -467,7 +461,7 @@ a {
 
 }
 #contact {
-    padding: 62px 100px 83px;
+    padding: 62px 0 83px;
     background-color: rgba(13,150,160,0.102);
     width: 100%;
 }
@@ -493,7 +487,7 @@ a {
     font-size: 1.0625rem;
     font-weight: 500;
     color: #505050;
-    line-height: 30px;
+    line-height: 1.7;
     margin: 0 auto;
     text-align: center;
 }
@@ -535,7 +529,7 @@ textarea {
     border: none;
     outline: none;
     font-size: 1rem;
-    line-height: 30px;
+    line-height: 1.5;
     padding: 10px 15px;
 }
 .contact_button {
@@ -617,10 +611,15 @@ input[type="submit"]:hover {
     color: white;
     text-decoration: none;
     display: flex;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
-.footer_sns img {
-    width: 22px;
-    height: auto;
+.footer_sns a:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+.footer_sns a:active {
+    transform: scale(1.1);
+    filter: brightness(1);
 }
 @media screen and (min-width:769px) {
     .pc_none{
@@ -631,9 +630,7 @@ input[type="submit"]:hover {
     }
     .footer-nav_lists {
         padding: 21px 36px;
-    }
-
-    
+    }   
 }
 @media screen and (max-width:768px) {
     .sp_none{
@@ -669,8 +666,8 @@ input[type="submit"]:hover {
     .main_copy {
         padding: 13px 17px;
         bottom: 0;  
-        top: 70%;
-        transform: translateY(5%);
+        top: auto;
+        transform:none;
         width: 100%;
         max-width: 311px;
     }
@@ -926,7 +923,7 @@ input[type="submit"]:hover {
         justify-content: center; 
         row-gap: 10px;
         padding: 16px 0 20px; 
-        line-height: 23px;
+        line-height: 1.8;
     }
     .footer-nav_list a {
         font-size: 1.125rem;
