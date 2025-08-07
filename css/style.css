@@ -19,6 +19,7 @@ p,h1,h2,h3,h4,h5,a {
     max-width: 100%;
     vertical-align: middle;
     height: auto;
+    display: block;
 } 
 .iframe {
     max-width: 100%;
@@ -70,11 +71,14 @@ a {
     font-weight: 700;
     color: #505050;   
     text-decoration: none;
-    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     cursor: pointer; 
     margin-left: 69px;
+}
+.header-title {
+    transition: color 0.5s ease, opacity 0.5s ease;
+
 }
 .nav_content {
     margin-left: auto;
@@ -99,7 +103,7 @@ a {
     align-items: center;
     list-style: none;
     color: #505050;
-    height: 100%;
+
     font-weight: 700;
     margin-right: 30px;
 }
@@ -108,7 +112,9 @@ a {
 }
 .nav_btn:hover,
 .header-title:hover {
-    color: #c08c5c; 
+    color: #505050; 
+    opacity: 0.5;
+  
 }
 .fv {
     width: 100%;
@@ -119,6 +125,7 @@ a {
     width: 100%;
     vertical-align: bottom;
     height: auto;
+    display: block;
 }
 .main_copy {
     background-color: rgba(255,255,255,0.7);
@@ -175,6 +182,7 @@ a {
     position: absolute;
     right:  80px;
     bottom: 33px;
+    display: block;
 }
 #strengths {
     padding: 65px 0 18px;
@@ -269,6 +277,7 @@ a {
 }
 .strengths-img-area img {
     width: 100%;
+    display: block;
 }
 #service {
     padding: 62px 0 59px;
@@ -325,6 +334,7 @@ a {
 .service-content img {
     width: 100%;
     margin-bottom: 12px;
+    display: block;
 }
 #news {
     padding: 63px 0 67px;
@@ -427,7 +437,7 @@ a {
     font-weight: 700;
 }
 .post {
-    margin-right: 18px;
+    margin-right: 25px;
     font-size: 1.875rem;
     font-weight: 500;
 }
@@ -555,7 +565,7 @@ input[type="submit"] {
     font-weight: 700;
 }
 input[type="submit"]:hover {
-    color: #000;
+    color: #0D96A0;
     background-color: #fff;
 }
 .footer {
