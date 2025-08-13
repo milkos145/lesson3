@@ -732,8 +732,8 @@ input[type="submit"]:hover {
     }
     .message img {
         position: absolute;
-        bottom: 50px;
-        right: 40px;
+        bottom: 45px;
+        right: 31px;
         width: 68px;
         height: auto;
     }
