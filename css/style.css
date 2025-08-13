@@ -10,6 +10,7 @@ body {
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-size: 62.5%;
 }
 p,h1,h2,h3,h4,h5,a {
     margin: 0;
@@ -17,7 +18,6 @@ p,h1,h2,h3,h4,h5,a {
 }
 .img {
     max-width: 100%;
-    vertical-align: middle;
     height: auto;
     display: block;
 } 
@@ -33,7 +33,7 @@ a {
     align-items: center;
 }
 .container {
-    font-size: 0.875rem;
+    font-size: 1.6rem;
     max-width: 1080px;
     padding: 0 30px;
     margin: 0 auto;
@@ -46,7 +46,7 @@ a {
 }
 .header {
     width: 100%;
-    font-size: 0.875rem;
+    font-size: 1.4rem;
     background-color: #fff;
     height: 50px;
     position: fixed;
@@ -67,7 +67,7 @@ a {
     margin-right: 8px;
 }
 .title {
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #505050;   
     text-decoration: none;
@@ -121,9 +121,7 @@ a {
     margin-top: 50px; 
     position: relative;
 }
-.fv img {
-    width: 100%;
-    vertical-align: bottom;
+.fv img {    width: 100%;
     height: auto;
     display: block;
 }
@@ -140,12 +138,12 @@ a {
     box-sizing: border-box;
 }
 .main_copy p {
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 8px;
 }
 .main_copy h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #0D96A0;
     line-height: 1.5;
     font-weight: 700;
@@ -165,14 +163,14 @@ a {
 }
 .message h2 {
     text-align: center;
-    font-size: 1.875rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #0D96A0;
     padding-bottom: 20px;
 }
 .message p {
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     color: #505050; 
     line-height: 1.8;
     font-weight: 500;
@@ -201,7 +199,7 @@ a {
 }    
 .strengths-with-images h3 {
     margin: 0;
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 .strengths-item {
@@ -217,15 +215,15 @@ a {
     display: block;
     width: 50%;
     margin-right: 45px;
-
+    margin-top: 48px;
 }
 .strengths-text-area h4 {
     font-weight: 700; 
-    font-size:1.375rem;
+    font-size:2.2rem;
     margin-bottom: 19px;
 }
 .strengths-text-area p {
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     text-align: left;
     font-weight: 500;
     line-height: 1.8;
@@ -239,11 +237,11 @@ a {
 }
 .strengths-text-area2 h4 {
     font-weight: 700; 
-    font-size: 1.375rem;
+    font-size: 2.2rem;
     margin-bottom: 21px;
 }
 .strengths-text-area2 p {
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     text-align: left;
     font-weight: 500;
     width: 105%;
@@ -258,11 +256,11 @@ a {
 }
 .strengths-text-area3 h4 {
     font-weight: 700; 
-    font-size: 1.375rem;
+    font-size: 2.2rem;
     margin-bottom: 21px;
 }
 .strengths-text-area3 p {
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     text-align: left;
     font-weight: 500;
     width: 101%;
@@ -295,7 +293,7 @@ a {
 }
 .service-with-images h2 {
     margin: 0;
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
 }
 .service-list {
     display: flex;
@@ -310,14 +308,14 @@ a {
 }
 .service-content h3 {
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 700;
     margin: 0;
     text-align: center;
     margin-bottom: 10px;
 }
 .service-content p {
-    font-size: 1.0625rem;
+    font-size: 1.7rem;
     font-weight: 500;
     line-height: 1.7;
 }
@@ -350,7 +348,7 @@ a {
 }
 .news-with-images h3 {
     margin: 0;
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 .news-icon {
@@ -362,7 +360,7 @@ a {
     margin: 0; 
     border-top: 1px solid #707070; 
 }
-.news-item {
+.news-item  {
     padding: 15px 0;
     border-bottom: 1px solid #707070;
     display: grid;
@@ -372,7 +370,7 @@ a {
     color: #505050;
     font-weight: 700;
     margin-left: 19px;
-    font-size: 1.125rem;
+    font-size: 1.7rem;
     transform: scale(1, 0.9); 
     
 }
@@ -381,7 +379,7 @@ a {
     font-weight: 700;
     text-decoration: none;
     margin-left: 40px;
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 .news-text,
 .news-text2 {
@@ -389,7 +387,7 @@ a {
     font-weight: 500;
     margin-left: 49px;
     text-align: left;
-    font-size: 1.0625rem;  
+    font-size: 1.7rem;  
 }
 #access {
     padding: 63px 0 80px;
@@ -404,7 +402,7 @@ a {
 }
 .access-with-images h3 {
     margin: 0;
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 .access-icon {
@@ -433,16 +431,19 @@ a {
     width: 47%;
 }
 .access-text-area h5 {
-    font-size: 1.5625rem;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 .post {
-    margin-right: 25px;
-    font-size: 1.875rem;
+    margin-right: 15px;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 .address  {
-    font-size: 2rem;
+    font-size: 1.8rem;
+}
+.access-contact {
+    display: flex;
 }
 .access-hours {
     border-top: solid 1px #707070;
@@ -455,20 +456,23 @@ a {
     margin: 0;
     font-weight: 500;
 }
-.tel {
-    font-size: 1.125rem;
-    font-weight: 500;
-    margin: 14px 0 8px;
+.contact-info {
+  display: flex;
+  gap: 0.8rem;        /* 電話とメールの間隔 */
+  align-items: center;
+  flex-wrap: wrap;    /* 狭い画面で折り返したければそのまま */
+  margin-top: 14px;
 }
-.number {
-    font-size: 1.5625rem;
-    font-weight: 700;
-    color: #0D96A0;  
+.contact-info .contact-item {
+  margin: 0;
+  display: flex;      /* ラベルとリンクを横並びにする */
+  gap: 0.4rem;
+  align-items: center;
+  white-space: nowrap; /* 「電話：000-0000-0000」で改行されないようにする */
 }
-.mail {
-    font-size: 1.125rem;
-    font-weight: 500;
-
+.contact-info .number {
+  display: inline-block;
+  color: #0D96A0;
 }
 #contact {
     padding: 62px 0 83px;
@@ -483,7 +487,7 @@ a {
 }
 .contact-with-images h3 {
     margin: 0;
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 .contact-icon {
@@ -494,7 +498,7 @@ a {
     
 }
 .section-desc {
-    font-size: 1.0625rem;
+    font-size: 1.7rem;
     font-weight: 500;
     color: #505050;
     line-height: 1.7;
@@ -512,7 +516,7 @@ a {
     margin: 0 auto;
 }
 .form_label {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 700;
     width: 160px;
     color: #505050;  
@@ -556,7 +560,7 @@ input[type="submit"] {
     background-color: #0D96A0;
     color: #fff;
     border: 1px solid #0D96A0;
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     cursor: pointer;
     transition: .4s;
     padding: 0;
@@ -594,16 +598,16 @@ input[type="submit"]:hover {
 }
 .footer-nav_link {
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 .footer_copyright {
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-top: 30px;
     font-weight: 700; 
 }
-.footer_copyright .rogo {
+.footer_copyright .logo {
     margin-right: 1em;
 }
 .footer_sns {
@@ -631,12 +635,30 @@ input[type="submit"]:hover {
     transform: scale(1.1);
     filter: brightness(1);
 }
+@media screen and  (max-width: 1024px) {
+  .news-item {
+        display: block; /* 横並びを解除して縦並びに */
+    }
+    .news-date,
+    .news-title,
+    .news-text,
+    .news-text2 {
+        display: block;
+        width: 100%; /* 幅いっぱいに */
+        box-sizing: border-box;
+        word-break: break-word; /* はみ出し防止 */
+        white-space: normal;
+    }
+    }
 @media screen and (min-width:769px) {
     .pc_none{
         display: none!important;
     }  
     .title {
-        margin-left: 40px;
+        margin-left: 40px;   
+    }
+    .sp-only {
+        display: block;
     }
     .footer-nav_lists {
         padding: 21px 36px;
@@ -662,7 +684,7 @@ input[type="submit"]:hover {
         margin-left: 0;
     }
     .header-title{
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
     .nav_content {
         display: none;
@@ -682,12 +704,12 @@ input[type="submit"]:hover {
         max-width: 311px;
     }
     .main_copy p {
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin-top: 5px;
         margin-bottom: 7px;
     }
     .main_copy h1 {
-        font-size: 1.84375rem;
+        font-size: 3rem;
     }
     .br-sp {
         display: inline;
@@ -700,10 +722,10 @@ input[type="submit"]:hover {
         padding: 50px 0 40px;
     }
     .message h2 {
-        font-size: 1.5625rem;
+        font-size: 2.5rem;
     }
     .message p {
-        font-size: 1rem;
+        font-size: 1.6rem;
         font-weight: 500;
         text-align: left;
         line-height: 1.8;
@@ -753,31 +775,31 @@ input[type="submit"]:hover {
         flex: 1;
     }
     .strengths-text-area h4 {
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin-bottom: 10px;
     }
     .strengths-text-area p {
-        font-size: 1rem;
+        font-size: 1.6rem;
         white-space: wrap;
         line-height: 1.8;
         text-align: left;
     }
     .strengths-text-area2 h4 {
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin-bottom: 10px;
     }
     .strengths-text-area2 p {
-        font-size: 1rem;
+        font-size: 1.6rem;
         white-space: wrap;
         line-height: 1.8;  
         text-align: left; 
     }
     .strengths-text-area3 h4 {
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin-bottom: 10px;
     }
     .strengths-text-area3 p {
-        font-size: 1rem;
+        font-size: 1.6rem;
         white-space: wrap;
         line-height: 1.8;
         text-align: left;
@@ -804,7 +826,7 @@ input[type="submit"]:hover {
         width: 100%;
     }
     .service-content h3 {
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin-bottom: 7px;
     }
     .service-content img {
@@ -815,7 +837,7 @@ input[type="submit"]:hover {
     }
     .service-content p {
         margin-bottom: 39px;
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
     .item-list {
         margin-bottom: 39px;
@@ -825,7 +847,7 @@ input[type="submit"]:hover {
         display: inline;
     }
     #news {
-        padding: 45px 20px 52px;
+        padding: 45px 0 52px;
     }   
     .news-with-images{
         margin-bottom: 45px;
@@ -837,7 +859,7 @@ input[type="submit"]:hover {
     }
     .news-date {
         margin-left: 8px;
-        font-size: 1.0625rem;
+        font-size: 1.7rem;
     }
     .news-title {
         margin-left: 8px;  
@@ -845,18 +867,18 @@ input[type="submit"]:hover {
     }
     .news-text {
         margin-left: 8px;
-        font-size: 1rem;
+        font-size: 1.6rem;
         margin-bottom: 5px;
         width: 95%;
     }
     .news-text2 {
         margin-left: 8px; 
         white-space: wrap;
-        font-size: 1rem;
+        font-size: 1.6rem;
         margin-bottom: 5px;
     }
     #access {
-        padding: 43px 20px 50px;
+        padding: 43px 0 50px;
     }
     .access-flex {
         display: block;
@@ -878,20 +900,27 @@ input[type="submit"]:hover {
         aspect-ratio: 335 / 222;
     }
     .number {
-        font-size: 1.5625rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .post {
+        font-size: 1.6rem;
+    }
+    .address {
+        font-size: 1.6rem;
     }
     .access-hours {
         margin-top: 10px;
         padding: 5px 0 5px 0;
     }
     #contact {
-        padding: 43px 20px 45px;
+        padding: 43px 0 45px;
     }
     .contact-with-images {
         margin-bottom: 42px;
     }
     .section-desc {
-        font-size: 1rem;
+        font-size: 1.7rem;
         text-align: left;
         margin-bottom: 32px;
     }
@@ -900,7 +929,7 @@ input[type="submit"]:hover {
         margin-top: -5px;
     }
     .form_label {
-        font-size: 1.125rem;
+        font-size: 1.8rem;
     }
     input[type="text"]{
         width: 100%;
@@ -917,14 +946,18 @@ input[type="submit"]:hover {
         margin-top: 5px;
     }
     .contact_button {
-        width: 335px;
+        width: 100%;
     }
     .contact_button input[type="submit"] {
         padding: 1px 0;
-        font-size: 1.25rem;
+        font-size: 2rem;
         height: 41px;
-        color: #50201b;
+        color: #fff;
     } 
+    input[type="submit"]:hover {
+        color: #0D96A0;
+        background-color: #fff;
+    }
     .footer {
         padding: 30px 0 50px;
     }
@@ -936,14 +969,14 @@ input[type="submit"]:hover {
         line-height: 1.8;
     }
     .footer-nav_list a {
-        font-size: 1.125rem;
+        font-size: 1.8rem;
         margin-bottom: 3px;
     }
     .footer_sns {
         margin-top: 40px;
     }
     .footer_copyright {
-        font-size: 1rem;
+        font-size: 1.6rem;
         font-weight: 700;
         margin-top: 20px;
     }
@@ -952,17 +985,17 @@ input[type="submit"]:hover {
     font-family: "Noto Sans JP", sans-serif;
 }
 .access-text-area p {
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     margin: 5px 0 8px 0;
     letter-spacing: 0;
 }
 .access-text-area .address,
 .access-text-area .post {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 .access-text-area .number {
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     line-height: 1.6;
 }
 .access-text-area hr {
@@ -971,7 +1004,7 @@ input[type="submit"]:hover {
     border-top: 1px solid #ccc;
 }
 .access-text-area h5.clinic-name {
-    font-size: 1.375rem ;
+    font-size: 2.2rem ;
     margin: 0 0 13px 0;
 }
 .access-with-images img {
@@ -980,7 +1013,7 @@ input[type="submit"]:hover {
     vertical-align: middle;
 }
 .access-with-images h3 {
-    font-size: 1.5rem ;
+    font-size: 2.5rem ;
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
