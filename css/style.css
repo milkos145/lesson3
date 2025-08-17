@@ -364,40 +364,39 @@ a {
 .news-item  {
     padding: 15px 0;
     border-bottom: 1px solid #707070;
-    display: grid;
-    
+    display: grid;   
 }
 .news-item a {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: 120px 200px 1fr; /* 日付・タイトル・本文の幅 */
+    align-items: start;
+    gap: 15px;
 }
 .news-item a span,
 .news-item a p {
     display: inline-block; /* 横に並べられるようにする */
-
 }
 .news-date {
+    width: 92px;
+    flex-shrink: 0;
     color: #505050;
     font-weight: 700;
     margin-left: 19px;
     font-size: 1.7rem;
-    transform: scale(1, 0.9); 
-    
+    transform: scale(1, 0.9);   
 }
 .news-title {
     color: #0D96A0;
     font-weight: 700;
     text-decoration: none;
-    margin-left: 25px;
     font-size: 2rem;
+    display: block;
 }
 .news-text,
 .news-text2 {
     color: #505050;
     font-weight: 500;
-    margin-left: 49px;
-    text-align: left;
+    margin: 0;
     font-size: 1.7rem;  
 }
 #access {
