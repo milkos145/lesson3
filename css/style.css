@@ -285,6 +285,9 @@ a {
     width: 100%;
     display: block;
 }
+.break-only-320 {
+  display: none; /* デフォルトでは改行を非表示にする */
+}
 #service {
     padding: 62px 0 59px;
     width: 100%;
@@ -334,7 +337,6 @@ a {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-    margin-top: 5px;
     font-weight: 500;
     text-align: left;
     color: #505050;
@@ -379,7 +381,6 @@ a {
 .news-item a {
     display: grid;
     grid-template-columns: 120px 200px 1fr; /* 日付・タイトル・本文の幅 */
-    align-items: start;
     gap: 15px;
 }
 .news-item a span,
@@ -468,6 +469,7 @@ a {
 .address  {
     font-size: 1.8rem;
     line-height: 27px;
+    font-weight: 500;
 }
 .access-contact {
     display: flex;
@@ -547,7 +549,7 @@ a {
     margin: 0 auto;
 }
 .form_label {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     width: 160px;
     color: #505050;  
@@ -561,7 +563,7 @@ input[type="email"] {
     width: 100%;
     max-width: 711px;
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: 1.6rem;
     border-radius: 4px;
     margin-inline: auto;
     margin-bottom: 30px;
@@ -575,7 +577,7 @@ textarea {
     resize: none;
     border: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     padding: 10px 15px;
 }
@@ -608,7 +610,7 @@ input[type="submit"]:hover {
 }
 .footer {
     background-color: #505050;
-    padding-block: 46px 71px;
+    padding: 46px 171px 71px 172px;
     text-align: center;
     width: 100%;
 }
@@ -623,9 +625,11 @@ input[type="submit"]:hover {
     display: flex;
     column-gap: 14px;
     border-bottom: 1px solid #ffffff;
-    padding: 21px 66px;
-    margin: 0 auto;
+    width: 100%;
     list-style: none;
+    justify-content: center;
+    width: fit-content;
+    white-space: nowrap;
 }
 .footer-nav_list {
     list-style: none;
@@ -636,6 +640,7 @@ input[type="submit"]:hover {
     font-weight: 700;
     line-height: 33px;
 }
+
 .footer_copyright {
     color: #fff;
     font-size: 2rem;
@@ -708,7 +713,7 @@ input[type="submit"]:hover {
         right:  10px;
         bottom: 23px;
         display: block;
-    }   
+    }  
     }
 @media screen and (min-width:769px) {
     .pc_none{
@@ -723,8 +728,15 @@ input[type="submit"]:hover {
     .br-pc {
         display: none;
     }
+    .strengths-img-area  {
+        width: 58%;
+        display: block;
+    }
+    .form_label {
+        font-size: 1.7rem;
+    }
     .footer-nav_lists {
-        padding: 21px 36px;
+        padding: 21px 66.44px 21px 66px;
     }   
 }
 @media screen and (max-width:768px) {
@@ -869,7 +881,7 @@ input[type="submit"]:hover {
         text-align: left;
     }
     .br-sp {
-        display: inline;
+        display: none;
     }
     .br-pc {
         display: none;
@@ -940,7 +952,11 @@ input[type="submit"]:hover {
         white-space: wrap;
         font-size: 1.6rem;
         margin-bottom: 5px;
+        width: 95%;
     }
+    .news-item a {
+    grid-template-columns: none; 
+  }
     #access {
         padding: 43px 0 50px;
     }
@@ -956,7 +972,7 @@ input[type="submit"]:hover {
     .access-img-area {
         width: 100%;
         max-width: 100%;
-        margin: 0 auto 25px;
+        margin: 0 auto 30px;
     }
     .access-img-area iframe {
         width: 100%;
@@ -972,10 +988,14 @@ input[type="submit"]:hover {
     }
     .address {
         font-size: 1.6rem;
+        display: inline-block;
     }
     .access-hours {
-        margin-top: 10px;
-        padding: 5px 0 5px 0;
+        margin-top: 14px;
+        padding: 12px 0 12px 0;
+    }
+    .contact-info {
+        margin-top: 6px;
     }
     #contact {
         padding: 43px 0 45px;
@@ -1009,9 +1029,7 @@ input[type="submit"]:hover {
         width: 100%;
         margin-top: 5px;
     }
-    .contact_button {
-        width: 100%;
-    }
+    
     .contact_button input[type="submit"] {
         padding: 1px 0;
         font-size: 2rem;
@@ -1023,7 +1041,7 @@ input[type="submit"]:hover {
         background-color: #fff;
     }
     .footer {
-        padding: 30px 0 50px;
+        padding: 30px 20.5px 50px 19.5px;
     }
     .footer-nav_lists {
         flex-wrap: wrap; 
@@ -1042,21 +1060,21 @@ input[type="submit"]:hover {
     .footer_copyright {
         font-size: 1.6rem;
         font-weight: 700;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 }
 .access-text-area {
     font-family: "Noto Sans JP", sans-serif;
+    max-width: 768px;
 }
 .access-text-area p {
     font-size: 1.6rem;
-    line-height: 1.6;
-    margin: 5px 0 8px 0;
+    line-height: 30px;
     letter-spacing: 0;
 }
 .access-text-area .address,
 .access-text-area .post {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .access-text-area .number {
     font-size: 2.5rem;
@@ -1069,7 +1087,7 @@ input[type="submit"]:hover {
 }
 .access-text-area h5.clinic-name {
     font-size: 2.2rem ;
-    margin: 0 0 13px 0;
+    margin: 0 0 12px 0;
 }
 .access-with-images img {
     width: 24px;
@@ -1106,17 +1124,20 @@ input[type="submit"]:hover {
     display: none;
   }
   .strengths-text-area2 h4 {
-    font-size: 1.05rem;
+    font-size: 2rem;
   }
   .strengths-text-area3 h4 {
-    font-size: 1.05rem;
+    font-size: 2rem;
   }
   .strengths-text-area2 p {
     width: 100%;
   }
+  .break-only-320 {
+    display: block; /* 320px以下の画面幅でのみ改行を表示する */
+  }
   .news-item a {
     grid-template-columns: none; 
-}
+  }
   .address-text .post,
   .address-text .address {
     display: inline-block;
