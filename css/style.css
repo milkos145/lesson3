@@ -279,14 +279,13 @@ a {
 }
 .strengths-img-area {
     max-width: 440px;
-   
 }
 .strengths-img-area img {
     width: 100%;
     display: block;
 }
 .break-only-320 {
-  display: none; /* デフォルトでは改行を非表示にする */
+  display: none; 
 }
 #service {
     padding: 62px 0 59px;
@@ -380,12 +379,12 @@ a {
 }
 .news-item a {
     display: grid;
-    grid-template-columns: 120px 200px 1fr; /* 日付・タイトル・本文の幅 */
+    grid-template-columns: 120px 200px 1fr; 
     gap: 15px;
 }
 .news-item a span,
 .news-item a p {
-    display: inline-block; /* 横に並べられるようにする */
+    display: inline-block;
 }
 .news-date {
     width: 92px;
@@ -488,17 +487,17 @@ a {
 }
 .contact-info {
   display: flex;
-  gap: 0.8rem;        /* 電話とメールの間隔 */
+  gap: 0.8rem;        
   align-items: center;
-  flex-wrap: wrap;    /* 狭い画面で折り返したければそのまま */
+  flex-wrap: wrap;   
   margin-top: 14px;
 }
 .contact-info .contact-item {
   margin: 0;
-  display: flex;      /* ラベルとリンクを横並びにする */
+  display: flex;      
   gap: 0.4rem;
   align-items: center;
-  white-space: nowrap; /* 「電話：000-0000-0000」で改行されないようにする */
+  white-space: nowrap; 
 }
 .contact-info .number {
   display: inline-block;
@@ -686,17 +685,26 @@ input[type="submit"]:hover {
         display: block;
     }   
     .news-item {
-        display: block; /* 横並びを解除して縦並びに */
+        display: block; 
     }
     .news-date,
     .news-title,
     .news-text,
     .news-text2 {
         display: block;
-        width: 100%; /* 幅いっぱいに */
+        width: 100%; 
         box-sizing: border-box;
-        word-break: break-word; /* はみ出し防止 */
+        word-break: break-word; 
         white-space: normal;
+    }
+    }
+@media screen and (max-width:945px) {
+    .footer-nav_lists {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        row-gap: 10px;
+        padding: 16px 0 20px; 
+        line-height: 1.8;
     }
     }
 @media screen and (max-width:825px) {
@@ -736,10 +744,7 @@ input[type="submit"]:hover {
     .form_label {
         font-size: 1.7rem;
     }
-    .footer {
-        padding: 46px 81px 71px 82px;
     }
-}
 @media screen and (max-width:768px) {
     .sp_none{
         display: none!important;
@@ -837,7 +842,6 @@ input[type="submit"]:hover {
         margin-bottom: 30px;
         display: flex;
         justify-content: center;
-
     }
     .strengths-img-area img {
         display: block;
@@ -959,7 +963,7 @@ input[type="submit"]:hover {
         width: 95%;
     }
     .news-item a {
-    grid-template-columns: none; 
+        grid-template-columns: none; 
     }
     #access {
         padding: 43px 0 50px;
@@ -1034,7 +1038,6 @@ input[type="submit"]:hover {
         width: 100%;
         margin-top: 5px;
     }
-    
     .contact_button input[type="submit"] {
         padding: 1px 0;
         font-size: 2rem;
@@ -1067,91 +1070,90 @@ input[type="submit"]:hover {
         font-weight: 700;
         margin-top: 15px;
     }
-}
-.access-text-area {
-    font-family: "Noto Sans JP", sans-serif;
-    max-width: 768px;
-}
-.access-text-area p {
-    font-size: 1.6rem;
-    line-height: 30px;
-    letter-spacing: 0;
-}
-.access-text-area .address,
-.access-text-area .post {
-    font-size: 1.6rem;
-}
-.access-text-area .number {
-    font-size: 2.5rem;
-    line-height: 1.6;
-}
-.access-text-area hr {
-    margin: 12px 0;
-    border: none;
-    border-top: 1px solid #ccc;
-}
-.access-text-area h5.clinic-name {
-    font-size: 2.2rem ;
-    margin: 0 0 12px 0;
-}
-.access-with-images img {
-    width: 24px;
-    height: 24px;
- 
-    display: block;
-}
-.access-with-images h3 {
-    font-size: 2.5rem ;
-    display: inline-block;
-    margin: 0 10px;
-    vertical-align: middle;
-}
+    }
+    .access-text-area {
+        font-family: "Noto Sans JP", sans-serif;
+        max-width: 768px;
+    }
+    .access-text-area p {
+        font-size: 1.6rem;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+    .access-text-area .address,
+    .access-text-area .post {
+        font-size: 1.6rem;
+    }
+    .access-text-area .number {
+        font-size: 2.5rem;
+        line-height: 1.6;
+    }
+    .access-text-area hr {
+        margin: 12px 0;
+        border: none;
+        border-top: 1px solid #ccc;
+    }
+    .access-text-area h5.clinic-name {
+        font-size: 2.2rem ;
+        margin: 0 0 12px 0;
+    }
+    .access-with-images img {
+        width: 24px;
+        height: 24px;
+        display: block;
+    }
+    .access-with-images h3 {
+        font-size: 2.5rem ;
+        display: inline-block;
+        margin: 0 10px;
+        vertical-align: middle;
+    }
 @media screen and (max-width: 320px){
-  .main_copy {
-    width: 95%;
-    top: auto;
-    transform: none;
-    padding: 12px 16px;
-    bottom: 0;  
-  }
-  .main_copy p {
-    font-size: 2rem;
-    margin-bottom: 7px;
-  }
-  .main_copy h1 {
-    font-size: 2.84375rem;
-    max-width: 100%;
-    line-height: 50px;
-  }
-  .br-sp {
-    display: none;
-  }
-  .br-pc {
-    display: none;
-  }
-  .strengths-text-area2 h4 {
-    font-size: 2rem;
-  }
-  .strengths-text-area3 h4 {
-    font-size: 2rem;
-  }
-  .strengths-text-area2 p {
-    width: 100%;
-  }
-  .break-only-320 {
-    display: block; /* 320px以下の画面幅でのみ改行を表示する */
-  }
-  .news-item a {
-    grid-template-columns: none; 
-  }
-  .address-text .post,
-  .address-text .address {
-    display: inline-block;
-  }
-  .footer_copyright .name {
-    display: block;
-  }
-body, input, textarea, button, select {
-  font-family: "Noto Sans JP", sans-serif;
-}
+    .main_copy {
+        width: 95%;
+        top: auto;
+        transform: none;
+        padding: 12px 16px;
+        bottom: 0;  
+    }
+    .main_copy p {
+        font-size: 2rem;
+        margin-bottom: 7px;
+    }
+    .main_copy h1 {
+        font-size: 2.84375rem;
+        max-width: 100%;
+        line-height: 50px;
+    }
+    .br-sp {
+        display: none;
+    }
+    .br-pc {
+        display: none;
+    }
+    .strengths-text-area2 h4 {
+        font-size: 2rem;
+    }
+    .strengths-text-area3 h4 {
+        font-size: 2rem;
+    }
+    .strengths-text-area2 p {
+        width: 100%;
+    }
+    .break-only-320 {
+        display: block; 
+    }
+    .news-item a {
+        grid-template-columns: none; 
+    }
+    .address-text .post,
+    .address-text .address {
+        display: inline-block;
+    }
+    .footer_copyright .name {
+        display: block;
+    }
+    body, input, textarea, button, select {
+        font-family: "Noto Sans JP", sans-serif;
+    }
 }
