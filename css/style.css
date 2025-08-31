@@ -11,6 +11,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 62.5%;
+    scroll-padding-top: 50px;
 }
 p,h1,h2,h3,h4,h5,a {
     margin: 0;
@@ -114,8 +115,7 @@ a {
 .nav_btn:hover,
 .header-title:hover {
     color: #505050; 
-    opacity: 0.5;
-  
+    opacity: 0.5; 
 }
 .fv {
     width: 100%;
@@ -204,6 +204,7 @@ a {
     margin: 0;
     font-size: 2.5rem;
     font-weight: 700;
+    line-height: 100%;
 }
 .strengths-item {
     display: flex;
@@ -231,7 +232,6 @@ a {
     font-size: 1.8rem;
     text-align: left;
     font-weight: 500;
-    line-height: 1.8;
     line-height: 33px;
 }
 .strengths-text-area2 {
@@ -506,6 +506,14 @@ a {
   line-height: 40px;
   font-weight: 700;
   font-size: 2.5rem;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.contact-info .number:hover {
+    opacity: 0.7;
+}
+.contact-info .number:active {
+    opacity: 1;
 }
 #contact {
     padding: 62px 0 83px;
@@ -578,7 +586,6 @@ textarea {
     border: none;
     outline: none;
     font-size: 1.6rem;
-    line-height: 1.5;
     padding: 10px 15px;
 }
 .contact_button {
@@ -614,10 +621,6 @@ input[type="submit"]:hover {
     text-align: center;
     width: 100%;
 }
-.inner {
-    display: flex;
-    flex-direction: column;  
-}
 .footer_content {
     margin-inline: auto;
 }
@@ -626,10 +629,11 @@ input[type="submit"]:hover {
     column-gap: 14px;
     border-bottom: 1px solid #ffffff;
     width: 100%;
-    list-style: none;
     justify-content: center;
-    width: fit-content;
-    white-space: nowrap;
+    white-space: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 21px;
 }
 .footer-nav_list {
     list-style: none;
@@ -640,7 +644,6 @@ input[type="submit"]:hover {
     font-weight: 700;
     line-height: 33px;
 }
-
 .footer_copyright {
     color: #fff;
     font-size: 2rem;
@@ -648,8 +651,8 @@ input[type="submit"]:hover {
     font-weight: 700; 
     line-height: 33px;
 }
-.footer_copyright .logo {
-    margin-right: 1em;
+.footer_copyright .name {
+    margin-left: 10px;
 }
 .footer_sns {
     display: flex;
@@ -666,15 +669,13 @@ input[type="submit"]:hover {
     color: white;
     text-decoration: none;
     display: flex;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 .footer_sns a:hover {
-    transform: scale(1.2);
-    filter: brightness(1.2);
+    opacity: 0.7;
 }
 .footer_sns a:active {
-    transform: scale(1.1);
-    filter: brightness(1);
+    opacity: 1;
 }
 @media screen and  (max-width: 1024px) {
     .message img {
@@ -735,9 +736,9 @@ input[type="submit"]:hover {
     .form_label {
         font-size: 1.7rem;
     }
-    .footer-nav_lists {
-        padding: 21px 66.44px 21px 66px;
-    }   
+    .footer {
+        padding: 46px 81px 71px 82px;
+    }
 }
 @media screen and (max-width:768px) {
     .sp_none{
@@ -769,6 +770,7 @@ input[type="submit"]:hover {
     }
     .main img {
         width: 100%;
+        display: block;
     }
     .main_copy {
         padding: 13px 17px;
@@ -812,6 +814,7 @@ input[type="submit"]:hover {
         right: 31px;
         width: 68px;
         height: auto;
+        display: block;
     }
     #strengths {
         padding: 50px 0 0;  
@@ -910,6 +913,7 @@ input[type="submit"]:hover {
         width: 100%;
         height: auto;
         object-fit: cover;
+        display: block;
     }
     .service-content p {
         margin-bottom: 39px;
@@ -956,7 +960,7 @@ input[type="submit"]:hover {
     }
     .news-item a {
     grid-template-columns: none; 
-  }
+    }
     #access {
         padding: 43px 0 50px;
     }
@@ -982,6 +986,7 @@ input[type="submit"]:hover {
     .number {
         font-size: 2.5rem;
         font-weight: 700;
+        pointer-events: auto;
     }
     .post {
         font-size: 1.6rem;
@@ -1093,6 +1098,7 @@ input[type="submit"]:hover {
     width: 24px;
     height: 24px;
     vertical-align: middle;
+    display: block;
 }
 .access-with-images h3 {
     font-size: 2.5rem ;
