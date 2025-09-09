@@ -4,7 +4,7 @@
 }
 body {
     margin:0;
-    font-family: "Noto Sans JP",sans-serif;
+    font-family: "Noto Sans JP",sans-sherif;
     overflow-x: hidden;
 }
 html {
@@ -76,7 +76,7 @@ a {
     align-items: center;
     cursor: pointer; 
     margin-left: 99px;
-    line-height: 33px;
+    line-height: 1.83;
 }
 .header-title {
     transition: color 0.5s ease, opacity 0.5s ease;
@@ -104,10 +104,12 @@ a {
     align-items: center;
     list-style: none;
     color: #505050;
-    line-height: 33px;
+    line-height: 2.35;
     font-weight: 700;
     margin-right: 60px;
     font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 7px;
 }
 .header_nav li:not(:first-of-type) {
     margin-left: 10px;
@@ -132,7 +134,7 @@ a {
     left: 0;
     padding: 23px 35px 23px 99px;
     top: 50%;
-    transform:translateY(-48%);
+    transform:translateY(-47%);
     width: 100%;
     max-width: 492px;
     height: 210px;
@@ -142,13 +144,13 @@ a {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 8px;
-    line-height: 100%;
+    line-height: 1.2;
 }
 .main_copy h1 {
     font-size: 4rem;
     color: #0D96A0;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1.5;
 }
 .message {
     width: 100%;
@@ -168,25 +170,25 @@ a {
     font-size: 3rem;
     font-weight: 700;
     color: #0D96A0;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     line-height: 50px;
 }
 .message p {
     text-align: center;
     font-size: 1.8rem;
     color: #505050; 
-    line-height: 33px;
+    line-height: 1.83;
     font-weight: 500;
 }
 .message img {
     width: 83.75px;
     position: absolute;
-    right:  80px;
-    bottom: 33px;
+    right:  76.24px;
+    bottom: 33.88px;
     display: block;
 }
 #strengths {
-    padding: 65px 0 18px;
+    padding: 71px 0 18px;
     background-color: rgba(13,150,160,0.102);
     width: 100%;
 }
@@ -201,15 +203,14 @@ a {
     width: 25.49px;
 }    
 .strengths-with-images h3 {
-    margin: 0;
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 100%;
+    line-height: 1.2;
 }
 .strengths-item {
     display: flex;
     max-width: 880px;
-    margin: 0 auto 45px;
+    margin: 0 auto 50px;
     justify-content: flex-start;
     align-items: center;
 }
@@ -226,13 +227,13 @@ a {
     font-weight: 700; 
     font-size:2.2rem;
     margin-bottom: 19px;
-    line-height: 33px;
+    line-height: 1.5;
 }
 .strengths-text-area p {
     font-size: 1.8rem;
     text-align: left;
     font-weight: 500;
-    line-height: 33px;
+    line-height: 1.83;
 }
 .strengths-text-area2 {
     display: block;
@@ -244,15 +245,15 @@ a {
 .strengths-text-area2 h4 {
     font-weight: 700; 
     font-size: 2.2rem;
-    margin-bottom: 21px;
-    line-height: 33px;
+    margin-bottom: 19px;
+    line-height: 1.5;
 }
 .strengths-text-area2 p {
     font-size: 1.8rem;
     text-align: left;
     font-weight: 500;
     width: 105%;
-    line-height: 33px;
+    line-height: 1.83;
 }
 .strengths-text-area3 {
     display: block;
@@ -264,15 +265,15 @@ a {
 .strengths-text-area3 h4 {
     font-weight: 700; 
     font-size: 2.2rem;
-    margin-bottom: 21px;
-    line-height: 33px;
+    margin-bottom: 19px;
+    line-height: 1.5;
 }
 .strengths-text-area3 p {
     font-size: 1.8rem;
     text-align: left;
     font-weight: 500;
     width: 101%;
-    line-height: 33px;
+    line-height: 1.83;
 }
 .nowrap {
     white-space: nowrap;
@@ -288,23 +289,27 @@ a {
   display: none; 
 }
 #service {
-    padding: 62px 0 59px;
+    padding: 71px 0 59px;
     width: 100%;
 }
 .service-with-images {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     margin-bottom: 48px;
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
+    height: auto;
 }
 .service-icon {
     width: 25.49px;
+    height: 25px;
 }
 .service-with-images h2 {
     margin: 0;
     font-size: 2.5rem;
-    line-height: 100%;
+    line-height: 1.2;
+    font-weight: 700;
 }
 .service-list {
     display: flex;
@@ -323,13 +328,13 @@ a {
     font-weight: 700;
     margin: 0;
     text-align: center;
-    margin-bottom: 10px;
-    line-height: 25px;
+    margin-bottom: 8px;
+    line-height: 1.25;
 }
 .service-content p {
     font-size: 1.7rem;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.76;
 }
 .service-list {
     font-size: 1.0625rem;
@@ -342,11 +347,11 @@ a {
 }
 .service-content img {
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 19px;
     display: block;
 }
 #news {
-    padding: 63px 0 67px;
+    padding: 63px 0 68px;
     width: 100%;
     background-color: rgba(13,150,160,0.102);
 }
@@ -361,10 +366,11 @@ a {
     margin: 0;
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 100%;
+    line-height: 1.2;
 }
 .news-icon {
     width: 25.49px;
+    height: 25px;
 }
 .news-list {
     list-style: none;
@@ -388,21 +394,19 @@ a {
 }
 .news-date {
     width: 92px;
-    flex-shrink: 0;
     color: #505050;
     font-weight: 700;
-    margin-left: 19px;
+    margin-left: 18.5px;
     font-size: 1.7rem;
     transform: scale(1, 0.9); 
-    line-height: 25px;  
+    line-height: 1.47;  
 }
 .news-title {
     color: #0D96A0;
     font-weight: 700;
     text-decoration: none;
     font-size: 2rem;
-    display: block;
-    line-height: 25px;
+    line-height: 1.25;
 }
 .news-text,
 .news-text2 {
@@ -410,10 +414,10 @@ a {
     font-weight: 500;
     margin: 0;
     font-size: 1.7rem;  
-    line-height: 30px;
+    line-height: 1.76;
 }
 #access {
-    padding: 63px 0 80px;
+    padding: 63px 0 70px;
     max-width: 100%;
 }
 .access-with-images {
@@ -427,7 +431,7 @@ a {
     margin: 0;
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 100%;
+    line-height: 1.2;
 }
 .access-icon {
     width: 25.49px;
@@ -457,13 +461,14 @@ a {
 .access-text-area h5 {
     font-size: 2.2rem;
     font-weight: 700;
-    line-height: 33px;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
 }
 .post {
     margin-right: 15px;
     font-size: 1.8rem;
     font-weight: 500;
-    line-height: 27px;
+    line-height: 1.5;
 }
 .address  {
     font-size: 1.8rem;
@@ -480,10 +485,10 @@ a {
     margin-top: 27px;
 }
 .access-hours p {
-    line-height: 2.2;
     margin: 0;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 2.22;
+    font-size: 1.8rem;
 }
 .contact-info {
   display: flex;
@@ -498,11 +503,12 @@ a {
   gap: 0.4rem;
   align-items: center;
   white-space: nowrap; 
+  font-size: 1.8rem;
 }
 .contact-info .number {
   display: inline-block;
   color: #0D96A0;
-  line-height: 40px;
+  line-height: 1.6;
   font-weight: 700;
   font-size: 2.5rem;
   transition: opacity 0.3s ease;
@@ -515,7 +521,7 @@ a {
     opacity: 1;
 }
 #contact {
-    padding: 62px 0 83px;
+    padding: 70px 0 80px;
     background-color: rgba(13,150,160,0.102);
     width: 100%;
 }
@@ -529,10 +535,11 @@ a {
     margin: 0;
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 100%;
+    line-height: 1.2;
 }
 .contact-icon {
     width: 25.49px;
+    height: 25px;
 }
 .desc {
     margin-top: 25px;
@@ -541,7 +548,7 @@ a {
     font-size: 1.7rem;
     font-weight: 500;
     color: #505050;
-    line-height: 30px;
+    line-height: 1.76;
     margin: 0 auto;
     text-align: center;
 }
@@ -556,12 +563,12 @@ a {
     margin: 0 auto;
 }
 .form_label {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     width: 160px;
     color: #505050;  
     margin-top: 10px;
-    line-height: 33px;
+    line-height: 1.65;
 }
 input[type="text"],
 input[type="email"] {
@@ -588,7 +595,7 @@ textarea {
     padding: 10px 15px;
 }
 .contact_button {
-    margin-top: 48px;
+    margin-top: 50px;
     margin-inline: auto;
     width: 200px;
     display: flex;
@@ -608,7 +615,7 @@ input[type="submit"] {
     border-radius: 0.7rem;
     font-family: "Noto Sans JP",sans-serif;
     font-weight: 700;
-    line-height: 33px;
+    line-height: 1.32;
 }
 input[type="submit"]:hover {
     color: #0D96A0;
@@ -616,12 +623,13 @@ input[type="submit"]:hover {
 }
 .footer {
     background-color: #505050;
-    padding: 46px 171px 71px 172px;
+    padding: 66px 30px 71px 30px;
     text-align: center;
     width: 100%;
 }
 .footer_content {
     margin-inline: auto;
+    max-width: 737px;
 }
 .footer-nav_lists {
     display: flex;
@@ -646,16 +654,16 @@ input[type="submit"]:hover {
 .footer_copyright {
     color: #fff;
     font-size: 2rem;
-    margin-top: 30px;
+    margin-top: 27px;
     font-weight: 700; 
-    line-height: 33px;
+    line-height: 1.65;
 }
 .footer_copyright .name {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .footer_sns {
     display: flex;
-    margin-top: 12px;
+    margin-top: 9px;
     list-style: none;
     justify-content: center; 
     padding: 0;
@@ -728,23 +736,16 @@ input[type="submit"]:hover {
     .pc_none{
         display: none!important;
     }  
-    .title {
-        margin-left: 80px;
-    }
     .sp-only {
         display: block;
     }
-    .br-pc {
-        display: none;
-    }
+    
     .strengths-img-area  {
         width: 58%;
         display: block;
     }
-    .form_label {
-        font-size: 1.7rem;
     }
-    }
+    
 @media screen and (max-width:768px) {
     .sp_none{
         display: none!important;
@@ -1076,26 +1077,13 @@ input[type="submit"]:hover {
         max-width: 768px;
     }
     .access-text-area p {
-        font-size: 1.6rem;
-        line-height: 30px;
         letter-spacing: 0;
     }
-    .access-text-area .address,
-    .access-text-area .post {
-        font-size: 1.6rem;
-    }
-    .access-text-area .number {
-        font-size: 2.5rem;
-        line-height: 1.6;
-    }
+    
     .access-text-area hr {
         margin: 12px 0;
         border: none;
         border-top: 1px solid #ccc;
-    }
-    .access-text-area h5.clinic-name {
-        font-size: 2.2rem ;
-        margin: 0 0 12px 0;
     }
     .access-with-images img {
         width: 24px;
