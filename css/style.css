@@ -684,68 +684,18 @@ input[type="submit"]:hover {
 .footer_sns a:active {
     opacity: 1;
 }
-@media screen and  (max-width: 1024px) {
-    .message img {
-        width: 83.75px;
-        position: absolute;
-        right:  10px;
-        bottom: 23px;
-        display: block;
-    }   
-    .news-item {
-        display: block; 
-    }
-    .news-date,
-    .news-title,
-    .news-text,
-    .news-text2 {
-        display: block;
-        width: 100%; 
-        box-sizing: border-box;
-        word-break: break-word; 
-        white-space: normal;
-    }
-    }
-@media screen and (max-width:945px) {
-    .footer-nav_lists {
-        flex-wrap: wrap; 
-        justify-content: center; 
-        row-gap: 10px;
-        padding: 16px 0 20px; 
-        line-height: 1.8;
-    }
-    }
-@media screen and (max-width:825px) {
-    .title {
-        margin-left: 90px;
-    } 
-    .message p {
-        white-space: normal; 
-        overflow-wrap: break-word;
-        word-break: keep-all;
-    }    
-    .message img {
-        width: 83.75px;
-        position: absolute;
-        right:  10px;
-        bottom: 23px;
-        display: block;
-    }  
-    }
-@media screen and (min-width:769px) {
+@media screen and (min-width:769px) and  (max-width: 1024px) {
     .pc_none{
         display: none!important;
     }  
     .sp-only {
         display: block;
     }
-    
     .strengths-img-area  {
         width: 58%;
         display: block;
     }
     }
-    
 @media screen and (max-width:768px) {
     .sp_none{
         display: none!important;
@@ -767,6 +717,7 @@ input[type="submit"]:hover {
     }
     .header-title{
         font-size: 2rem;
+        line-height: 1.65;
     }
     .nav_content {
         display: none;
@@ -779,7 +730,7 @@ input[type="submit"]:hover {
         display: block;
     }
     .main_copy {
-        padding: 13px 17px;
+        padding: 18px 14px;
         bottom: 0;  
         top: auto;
         transform: none;
@@ -790,29 +741,27 @@ input[type="submit"]:hover {
     .main_copy p {
         font-size: 2rem;
         margin-bottom: 7px;
+        line-height: 1.2;
     }
     .main_copy h1 {
         font-size: 3rem;
-        line-height: 40px;
+        line-height: 1.33;
     }
-    .br-sp {
-        display: inline;
-    }
-    .br-sp::after {
-        content: "\A"; 
-        white-space: pre;
-    }
+    
     .message {
-        padding: 50px 0 40px;
+        padding: 49px 0 39px;
     }
     .message h2 {
         font-size: 2.5rem;
+        line-height: 1.4;
+        font-weight: 700;
+        padding-bottom: 17px;
     }
     .message p {
         font-size: 1.6rem;
         font-weight: 500;
         text-align: left;
-        line-height: 1.8;
+        line-height: 1.87;
     }
     .message img {
         position: absolute;
@@ -823,15 +772,15 @@ input[type="submit"]:hover {
         display: block;
     }
     #strengths {
-        padding: 50px 0 0;  
+        padding: 58px 0 0;  
     }
     .strengths-with-images {
-        margin-bottom: 41px;
+        margin-bottom: 39px;
     }
     .strengths-item {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin: 0;
         column-gap: calc(45 / 880 * 100%);
         align-items: center;
         flex-direction: column;
@@ -854,48 +803,51 @@ input[type="submit"]:hover {
     .strengths-text-area3 {
         order: 2;
         width: 100%;
-        margin: 0 0 10px;
+        margin: 0;
         text-align: center;
         flex: 1;
     }
     .strengths-text-area h4 {
         font-size: 2rem;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
     .strengths-text-area p {
         font-size: 1.6rem;
         white-space: wrap;
         line-height: 1.8;
         text-align: left;
+        margin-bottom: 42px;
     }
     .strengths-text-area2 h4 {
         font-size: 2rem;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
     .strengths-text-area2 p {
         font-size: 1.6rem;
         white-space: wrap;
         line-height: 1.8;  
         text-align: left; 
+         margin-bottom: 42px;
     }
     .strengths-text-area3 h4 {
         font-size: 2rem;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
     .strengths-text-area3 p {
         font-size: 1.6rem;
         white-space: wrap;
         line-height: 1.8;
         text-align: left;
+         margin-bottom: 35px;
     }
     .br-sp {
-        display: none;
+        display: block;
     }
     .br-pc {
         display: none;
     }
     #service {
-        padding: 45px 0 0;
+        padding: 50px 0 0;
     }
     .service-with-images {
         margin-bottom: 45px;
@@ -912,9 +864,11 @@ input[type="submit"]:hover {
     .service-content h3 {
         font-size: 2rem;
         margin-bottom: 7px;
+        font-weight: 700;
+        line-height: 1.5;
     }
     .service-content img {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -922,7 +876,9 @@ input[type="submit"]:hover {
     }
     .service-content p {
         margin-bottom: 39px;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.875;
     }
     .item-list {
         margin-bottom: 39px;
@@ -932,15 +888,15 @@ input[type="submit"]:hover {
         display: inline;
     }
     #news {
-        padding: 45px 0 52px;
+        padding: 50px 0;
     }   
-    .news-with-images{
-        margin-bottom: 45px;
+    .news-with-images {
+        margin-bottom: 50px;
     }
     .news-item {
         display: block;
         text-align: left;
-        margin: 16px 0;
+        padding: 28px 0;
     }
     .news-date {
         margin-left: 8px;
@@ -967,7 +923,10 @@ input[type="submit"]:hover {
         grid-template-columns: none; 
     }
     #access {
-        padding: 43px 0 50px;
+        padding: 50px 0;
+    }
+    .access-with-images {
+        margin-bottom: 50px;
     }
     .access-flex {
         display: block;
@@ -993,6 +952,12 @@ input[type="submit"]:hover {
         font-weight: 700;
         pointer-events: auto;
     }
+    .access-text-area h5 {
+        margin: 0 0 12px 0;
+    }
+    .address-text {
+        margin-bottom: 6px;
+    }
     .post {
         font-size: 1.6rem;
     }
@@ -1001,22 +966,23 @@ input[type="submit"]:hover {
         display: inline-block;
     }
     .access-hours {
-        margin-top: 14px;
         padding: 12px 0 12px 0;
+        margin: 0;
     }
     .contact-info {
-        margin-top: 6px;
+        margin-bottom: 14px;
     }
     #contact {
-        padding: 43px 0 45px;
+        padding: 50px 0;
     }
     .contact-with-images {
-        margin-bottom: 42px;
+        margin-bottom: 47px;
     }
     .section-desc {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         text-align: left;
-        margin-bottom: 32px;
+        margin-bottom: 34px;
+        font-weight: 500;
     }
     .form_item {
         display: block;
@@ -1024,20 +990,22 @@ input[type="submit"]:hover {
     }
     .form_label {
         font-size: 1.8rem;
+        line-height: 1.83;
+        margin-bottom: 2px;
     }
     input[type="text"]{
         width: 100%;
         height: 50px;
-        margin-top: 5px;
+        margin-bottom: 17px;
+     
     }
     input[type="email"]{
         width: 100%;
         height: 50px;
-        margin-top: 5px;
+        margin-bottom: 17px;
     }
     textarea {
         width: 100%;
-        margin-top: 5px;
     }
     .contact_button input[type="submit"] {
         padding: 1px 0;
@@ -1050,27 +1018,28 @@ input[type="submit"]:hover {
         background-color: #fff;
     }
     .footer {
-        padding: 30px 20.5px 50px 19.5px;
+        padding: 45px 19.5px 50px 20.5px;
     }
     .footer-nav_lists {
         flex-wrap: wrap; 
         justify-content: center; 
-        row-gap: 10px;
-        padding: 16px 0 20px; 
+   
         line-height: 1.8;
     }
     .footer-nav_list a {
         font-size: 1.8rem;
-        margin-bottom: 3px;
-    }
-    .footer_sns {
-        margin-top: 40px;
+        line-height: 1.83;
     }
     .footer_copyright {
         font-size: 1.6rem;
         font-weight: 700;
         margin-top: 15px;
     }
+    .footer_sns {
+        margin-top: 28px;
+        margin-bottom: 0;
+    }
+    
     }
     .access-text-area {
         font-family: "Noto Sans JP", sans-serif;
