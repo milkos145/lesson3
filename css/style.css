@@ -205,7 +205,7 @@ a {
 .strengths-with-images h3 {
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.44;
 }
 .strengths-item {
     display: flex;
@@ -308,7 +308,7 @@ a {
 .service-with-images h2 {
     margin: 0;
     font-size: 2.5rem;
-    line-height: 1.2;
+    line-height: 1.44;
     font-weight: 700;
 }
 .service-list {
@@ -362,11 +362,11 @@ a {
     align-items: center;
     justify-content: center;
 }
-.news-with-images h3 {
+.news-with-images h2 {
     margin: 0;
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.44;
 }
 .news-icon {
     width: 25.49px;
@@ -398,7 +398,7 @@ a {
     font-weight: 700;
     margin-left: 18.5px;
     font-size: 1.7rem;
-    transform: scale(1, 0.9); 
+  
     line-height: 1.47;  
 }
 .news-title {
@@ -427,11 +427,11 @@ a {
     align-items: center;
     justify-content: center;
 }
-.access-with-images h3 {
+.access-with-images h2 {
     margin: 0;
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.44;
 }
 .access-icon {
     width: 25.49px;
@@ -531,11 +531,11 @@ a {
     align-items: center;
     justify-content: center;
 }
-.contact-with-images h3 {
+.contact-with-images h2 {
     margin: 0;
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.44;
 }
 .contact-icon {
     width: 25.49px;
@@ -772,10 +772,10 @@ input[type="submit"]:hover {
         display: block;
     }
     #strengths {
-        padding: 58px 0 0;  
+        padding: 51px 0 0;  
     }
     .strengths-with-images {
-        margin-bottom: 39px;
+        margin-bottom: 43px;
     }
     .strengths-item {
         display: flex;
@@ -789,7 +789,7 @@ input[type="submit"]:hover {
         order: 1;
         max-width: 100%;
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 26px;
         display: flex;
         justify-content: center;
     }
@@ -814,7 +814,7 @@ input[type="submit"]:hover {
     .strengths-text-area p {
         font-size: 1.6rem;
         white-space: wrap;
-        line-height: 1.8;
+        line-height: 1.875;
         text-align: left;
         margin-bottom: 42px;
     }
@@ -825,7 +825,7 @@ input[type="submit"]:hover {
     .strengths-text-area2 p {
         font-size: 1.6rem;
         white-space: wrap;
-        line-height: 1.8;  
+        line-height: 1.875;  
         text-align: left; 
          margin-bottom: 42px;
     }
@@ -836,7 +836,7 @@ input[type="submit"]:hover {
     .strengths-text-area3 p {
         font-size: 1.6rem;
         white-space: wrap;
-        line-height: 1.8;
+        line-height: 1.875;
         text-align: left;
          margin-bottom: 35px;
     }
@@ -847,10 +847,10 @@ input[type="submit"]:hover {
         display: none;
     }
     #service {
-        padding: 50px 0 0;
+        padding: 45px 0 0;
     }
     .service-with-images {
-        margin-bottom: 45px;
+        margin-bottom: 44px;
     }
     .service-list {
         display: block;
@@ -888,45 +888,53 @@ input[type="submit"]:hover {
         display: inline;
     }
     #news {
-        padding: 50px 0;
+        padding: 43px 0;
     }   
     .news-with-images {
-        margin-bottom: 50px;
+        margin-bottom: 46px;
     }
     .news-item {
         display: block;
         text-align: left;
         padding: 28px 0;
     }
+    .news-item a {
+        gap: 0;
+    }
     .news-date {
-        margin-left: 8px;
+        margin-left: 10px;
         font-size: 1.7rem;
+        line-height: 1.47;
+        font-weight: 700;
+        margin-bottom: 2px;
     }
     .news-title {
-        margin-left: 8px;  
-        margin-bottom: 5px; 
+        margin-left: 10px;  
+        margin-bottom: 6px;
     }
     .news-text {
-        margin-left: 8px;
+        margin-left: 10px;
         font-size: 1.6rem;
-        margin-bottom: 5px;
         width: 95%;
+        font-weight: 500;
+        line-height: 1.5;
     }
     .news-text2 {
-        margin-left: 8px; 
-        white-space: wrap;
+        margin-left: 10px; 
+        white-space: nowrap;
         font-size: 1.6rem;
-        margin-bottom: 5px;
         width: 95%;
+        font-weight: 500;
+        line-height: 1.5;
     }
     .news-item a {
         grid-template-columns: none; 
     }
     #access {
-        padding: 50px 0;
+        padding: 43px 0;
     }
     .access-with-images {
-        margin-bottom: 50px;
+        margin-bottom: 46px;
     }
     .access-flex {
         display: block;
@@ -969,8 +977,14 @@ input[type="submit"]:hover {
         padding: 12px 0 12px 0;
         margin: 0;
     }
+    .access-hours .time,
+    .access-hours .holiday {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.875;
+    }
     .contact-info {
-        margin-bottom: 14px;
+        margin: 0 0 14px;
     }
     #contact {
         padding: 50px 0;
@@ -1055,8 +1069,8 @@ input[type="submit"]:hover {
         border-top: 1px solid #ccc;
     }
     .access-with-images img {
-        width: 24px;
-        height: 24px;
+        width: 25.49px;
+        height: 25px;
         display: block;
     }
     .access-with-images h3 {
