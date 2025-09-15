@@ -47,7 +47,6 @@ a {
 }
 .header {
     width: 100%;
-    font-size: 1.4rem;
     background-color: #fff;
     height: 50px;
     position: fixed;
@@ -337,11 +336,9 @@ a {
     line-height: 1.76;
 }
 .service-list {
-    font-size: 1.0625rem;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-    font-weight: 500;
     text-align: left;
     color: #505050;
 }
@@ -435,10 +432,6 @@ a {
 .access-icon {
     width: 25.49px;
 }
-.access-with-images p {
-    margin: 0;
-    font-size: 1.125rem;
-}
 .access-flex {
     display: flex;
     justify-content: center;
@@ -453,7 +446,7 @@ a {
     height: 100%;
 }
 .access-text-area {
-    max-width: 390px;
+    max-width: 100%;
     margin-left: 46px;
     width: 47%;
 }
@@ -581,7 +574,6 @@ input[type="email"] {
     margin-inline: auto;
     margin-bottom: 30px;
     outline: none;
-    line-height: 33px;
 }
 textarea {
     width: 100%;
@@ -647,7 +639,7 @@ input[type="submit"]:hover {
     color: #ffffff;
     font-size: 2rem;
     font-weight: 700;
-    line-height: 33px;
+    line-height: 1.65;
 }
 .footer_copyright {
     color: #fff;
@@ -702,6 +694,15 @@ input[type="submit"]:hover {
     .strengths-img-area  {
         width: 58%;
         display: block;
+    }
+    .address-text {
+        display: block; 
+    }
+    .address-text .post {
+        display: block; 
+    }
+    .address-text .address {
+        display: block; 
     }
     }
 @media screen and (max-width:768px) {
@@ -817,6 +818,7 @@ input[type="submit"]:hover {
     .strengths-text-area h4 {
         font-size: 2rem;
         margin-bottom: 8px;
+        line-height: 1.5;
     }
     .strengths-text-area p {
         font-size: 1.6rem;
@@ -828,6 +830,7 @@ input[type="submit"]:hover {
     .strengths-text-area2 h4 {
         font-size: 2rem;
         margin-bottom: 8px;
+        line-height: 1.5;
     }
     .strengths-text-area2 p {
         font-size: 1.6rem;
@@ -839,6 +842,7 @@ input[type="submit"]:hover {
     .strengths-text-area3 h4 {
         font-size: 2rem;
         margin-bottom: 8px;
+        line-height: 1.5;
     }
     .strengths-text-area3 p {
         font-size: 1.6rem;
@@ -886,13 +890,6 @@ input[type="submit"]:hover {
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.875;
-    }
-    .item-list {
-        margin-bottom: 39px;
-        font-size: 1rem;
-    }
-    .item-list li {
-        display: inline;
     }
     #news {
         padding: 43px 0 50px;
@@ -991,8 +988,9 @@ input[type="submit"]:hover {
         line-height: 1.5;
     }
     .access-hours {
-        padding: 12px 0 12px 0;
+        padding: 12px 0;
         margin: 0;
+        width: 100%;
     }
     .access-hours .time,
     .access-hours .holiday {
@@ -1087,10 +1085,12 @@ input[type="submit"]:hover {
     .main_copy p {
         font-size: 2rem;
         margin-bottom: 7px;
+        line-height: 1.44;
     }
     .main_copy h1 {
         font-size: 2.84375rem;
         max-width: 100%;
+        line-height: 1.33;
     }
     .br-sp {
         display: none;
