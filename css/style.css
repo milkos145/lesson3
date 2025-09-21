@@ -6,6 +6,9 @@ body {
     margin:0;
     font-family: "Noto Sans JP",sans-sherif;
     overflow-x: hidden;
+    font-size: 1.8rem;
+    line-height: 1.8;
+
 }
 html {
     scroll-behavior: smooth;
@@ -36,7 +39,6 @@ a {
 .container {
     font-size: 1.6rem;
     max-width: 1080px;
- 
     margin: 0 auto;
 }
 .inner {
@@ -44,6 +46,9 @@ a {
     padding: 0 30px;
     margin: 0 auto;
     width: 100%;
+}
+.id-span {
+    display: inline-block;
 }
 .header {
     width: 100%;
@@ -436,6 +441,7 @@ a {
     display: flex;
     justify-content: center;
     width: 100%; 
+    gap: 46px
 }
 .access-img-area {
     width: 53%;
@@ -445,72 +451,65 @@ a {
     width: 100%;
     height: 100%;
 }
-.access-text-area {
-    max-width: 100%;
-    margin-left: 46px;
-    width: 47%;
+.access-sec-item {
+    flex: 1;
 }
-.access-text-area h5 {
+.access-sec-item_name p {
     font-size: 2.2rem;
+    line-height: 1.5;
     font-weight: 700;
-    line-height: 1.5;
-    margin: 0 0 15px 0;
 }
-.post {
-    margin-right: 15px;
+.access-sec-item_address {
+    margin-top: 15px;
+}
+.access-sec-item_address p {
+    line-height: 1.5;
     font-size: 1.8rem;
     font-weight: 500;
-    line-height: 1.5;
 }
-.address  {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    font-weight: 500;
-}
-.access-contact {
-    display: flex;
-}
-.access-hours {
-    border-top: solid 1px #707070;
-    border-bottom: solid 1px #707070;
-    padding: 15px 0 14px;
-    margin: 27px 0 0 4px;
-}
-.access-hours p {
-    margin: 0;
-    font-weight: 500;
-    line-height: 2.22;
-    font-size: 1.8rem;
-}
-.contact-info {
-    display: flex;
-    gap: 8px;        
-    align-items: center;
-    flex-wrap: wrap;   
+.access-sec-item_tel {
     margin-top: 14px;
+    display: flex;
+    align-items: baseline;
 }
-.contact-info .contact-item {
-    margin: 0;
-    display: flex;      
-    line-height: 1.5;
-    align-items: center;
-    white-space: nowrap; 
+.access-sec-item_tel span {
+    line-height: 1.6;
     font-size: 1.8rem;
 }
-.contact-info .number {
-    display: inline-block;
-    color: #0D96A0;
+.access-sec-item_tel a {
+    font-size: 2.5rem;
     line-height: 1.6;
     font-weight: 700;
-    font-size: 2.5rem;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
+    color: #0D96A0;
 }
-.contact-info .number:hover {
+.access-sec-item_mail {
+    margin-top: 7px;
+}
+.access-sec-item_mail p {
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.access-sec-item_hours {
+    margin-top: 27px;
+    margin-left: 4px;
+    padding: 15px 0 14px;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+.access-sec-item_hours p {
+    line-height: 2.2;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.access-sec-item_tel a:hover {
     opacity: 0.7;
 }
-.contact-info .number:active {
+.access-sec-item_tel a:active {
     opacity: 1;
+}
+.access-sec-item_mail:hover {
+    opacity: 0.7;
 }
 #contact {
     padding: 62px 0 80px;
@@ -688,6 +687,9 @@ input[type="submit"]:hover {
         bottom: 13.88px;
         display: block;
     }
+    .message p {
+         word-break: auto-phrase;
+    }
     .sp-only {
         display: block;
     }
@@ -703,6 +705,11 @@ input[type="submit"]:hover {
     }
     .address-text .address {
         display: block; 
+    }
+    .form_label {
+        white-space: nowrap;
+        font-size: 1.8rem;
+        line-height: 1.65;
     }
     }
 @media screen and (max-width:768px) {
@@ -822,7 +829,6 @@ input[type="submit"]:hover {
     }
     .strengths-text-area p {
         font-size: 1.6rem;
-        white-space: wrap;
         line-height: 1.875;
         text-align: left;
         margin-bottom: 42px;
@@ -834,10 +840,11 @@ input[type="submit"]:hover {
     }
     .strengths-text-area2 p {
         font-size: 1.6rem;
-        white-space: wrap;
         line-height: 1.875;  
         text-align: left; 
-         margin-bottom: 42px;
+        margin-bottom: 42px;
+        max-width: 100%;
+
     }
     .strengths-text-area3 h4 {
         font-size: 2rem;
@@ -846,13 +853,9 @@ input[type="submit"]:hover {
     }
     .strengths-text-area3 p {
         font-size: 1.6rem;
-        white-space: wrap;
         line-height: 1.875;
         text-align: left;
         margin-bottom: 35px;
-    }
-    .br-sp {
-        display: block;
     }
     .br-pc {
         display: none;
@@ -952,52 +955,36 @@ input[type="submit"]:hover {
     .access-img-area iframe {
         aspect-ratio: 335 / 222;
     }
-    .contact-info {
-        margin: 0 0 14px;
-        gap: 5px;
+    .access-sec-item {
+        flex: 1;
     }
-    .contact-info .tel {
-        font-size: 1.6rem;
-        line-height: 1.6;
-        font-weight: 500;
-    }
-    .contact-info .number {
-        font-size: 2.5rem;
+    .access-sec-item p {
+        font-size: 2.2rem;
+        line-height: 1.5;
         font-weight: 700;
-        line-height: 1.6;
-        position: relative;
-        top:-3px;
     }
-    .contact-item.mail {
-        font-size: 1.6rem;
-        line-height: 1.6;
+    .access-sec-item_address {
+        margin-top: 12px;
     }
-    .access-text-area h5 {
-        margin: 0 0 12px 0;
-    }
-    .address-text {
-        margin-bottom: 6px;
-    }
-    .post {
-        font-size: 1.6rem;
+    .access-sec-item_address p {
         line-height: 1.5;
     }
-    .address {
-        font-size: 1.6rem;
-        display: inline-block;
-        line-height: 1.5;
+    .access-sec-item_tel {
+        margin-top: 16px;
     }
-    .access-hours {
-        padding: 12px 0;
-        margin: 0;
-        width: 100%;
+    .access-sec-item_tel span {
+        line-height: 1.6;
     }
-    .access-hours .time,
-    .access-hours .holiday {
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 1.87;
+    .access-sec-item_tel a {
+        font-size: 2.5rem;
+        line-height: 1.6;
+        font-weight: 700;
+        color: #0D96A0;
     }
+
+
+
+
     #contact {
         padding: 43px 0 50px;
     }
@@ -1037,7 +1024,7 @@ input[type="submit"]:hover {
     .contact_button {
         margin: 0;
         width: 100%;
-        max-width: 335px;
+        max-width: 100%;
     }
     .contact_button input[type="submit"] {
         padding: 8px 7px;
@@ -1076,19 +1063,20 @@ input[type="submit"]:hover {
     }
 @media screen and (max-width: 320px){
     .main_copy {
-        width: 95%;
+        width: 85%;
+        height: auto;
         top: auto;
         transform: none;
-        padding: 12px 16px;
+        padding: 14px 16px 14px;
         bottom: 0;  
     }
     .main_copy p {
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin-bottom: 7px;
         line-height: 1.44;
     }
     .main_copy h1 {
-        font-size: 2.84375rem;
+        font-size: 2.6rem;
         max-width: 100%;
         line-height: 1.33;
     }
