@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
     font-size: 1.8rem;
     line-height: 1.8;
-
 }
 html {
     scroll-behavior: smooth;
@@ -369,6 +368,7 @@ a {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.44;
+    width: 100px;
 }
 .news-icon {
     width: 25.49px;
@@ -527,10 +527,12 @@ a {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.44;
+    top: -2px;
 }
-.contact-icon {
+.contact-with-images .images-icon {
     width: 25.49px;
     height: 25px;
+    top: 5px;
 }
 .desc {
     margin-top: 25px;
@@ -681,11 +683,9 @@ input[type="submit"]:hover {
         white-space: nowrap;
     }
     .message img {
-        width: 83.75px;
-        position: absolute;
-        right: 10.24px;
-        bottom: 13.88px;
+        right: 12px;
         display: block;
+        right: 30px;
     }
     .message p {
          word-break: auto-phrase;
@@ -781,7 +781,7 @@ input[type="submit"]:hover {
     .message img {
         position: absolute;
         bottom: 45px;
-        right: 31px;
+        right: 20px;
         width: 68px;
         height: auto;
         display: block;
@@ -859,6 +859,9 @@ input[type="submit"]:hover {
     }
     .br-pc {
         display: none;
+    }
+    .br-sp {
+        display: block;
     }
     #service {
         padding: 45px 0 0;
@@ -954,6 +957,7 @@ input[type="submit"]:hover {
     }
     .access-img-area iframe {
         aspect-ratio: 335 / 222;
+        display: block;
     }
     .access-sec-item {
         flex: 1;
@@ -968,23 +972,30 @@ input[type="submit"]:hover {
     }
     .access-sec-item_address p {
         line-height: 1.5;
+        font-size: 1.6rem;
+        font-weight: 500;
     }
     .access-sec-item_tel {
-        margin-top: 16px;
+        margin-top: 6px;
     }
     .access-sec-item_tel span {
-        line-height: 1.6;
+        line-height: 1.68;
+        font-size: 1.6rem;
     }
-    .access-sec-item_tel a {
-        font-size: 2.5rem;
-        line-height: 1.6;
-        font-weight: 700;
-        color: #0D96A0;
+    .access-sec-item_mail p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5;
     }
-
-
-
-
+    .access-sec-item_hours {
+        margin-top: 14px;
+        margin-left: 0;
+    }
+    .access-sec-item_hours p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.8;
+    }
     #contact {
         padding: 43px 0 50px;
     }
@@ -1003,7 +1014,7 @@ input[type="submit"]:hover {
     }
     .form_label {
         font-size: 1.8rem;
-        line-height: 1.83;
+        line-height: 1.8;
         margin-bottom: 2px;
         font-weight: 700;
     }
