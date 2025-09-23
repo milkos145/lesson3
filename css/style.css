@@ -4,7 +4,7 @@
 }
 body {
     margin:0;
-    font-family: "Noto Sans JP",sans-sherif;
+    font-family: "Noto Sans JP",sans-serif;
     overflow-x: hidden;
     font-size: 1.8rem;
     line-height: 1.8;
@@ -481,6 +481,7 @@ a {
     line-height: 1.6;
     font-weight: 700;
     color: #0D96A0;
+    pointer-events: none;
 }
 .access-sec-item_mail {
     margin-top: 7px;
@@ -724,9 +725,9 @@ input[type="submit"]:hover {
         padding: 0 20px;
     }
     .inner {
-        padding: 0 20px;
         margin: 0 auto;
         max-width: 100%;
+        padding: 0 20px;
     }
     .title {
         margin-left: 0;
@@ -805,7 +806,7 @@ input[type="submit"]:hover {
         max-width: 100%;
         width: 100%;
         margin-bottom: 26px;
-        display: flex;
+ 
         justify-content: center;
     }
     .strengths-img-area img {
@@ -844,7 +845,6 @@ input[type="submit"]:hover {
         text-align: left; 
         margin-bottom: 42px;
         max-width: 100%;
-
     }
     .strengths-text-area3 h4 {
         font-size: 2rem;
@@ -856,6 +856,7 @@ input[type="submit"]:hover {
         line-height: 1.875;
         text-align: left;
         margin-bottom: 35px;
+        max-width: 95%;
     }
     .br-pc {
         display: none;
@@ -956,13 +957,15 @@ input[type="submit"]:hover {
         margin: 0 auto 30px;
     }
     .access-img-area iframe {
+        width: 100%;
+        height: auto;
         aspect-ratio: 335 / 222;
         display: block;
     }
     .access-sec-item {
         flex: 1;
     }
-    .access-sec-item p {
+    .access-sec-item_name p {
         font-size: 2.2rem;
         line-height: 1.5;
         font-weight: 700;
@@ -976,25 +979,34 @@ input[type="submit"]:hover {
         font-weight: 500;
     }
     .access-sec-item_tel {
-        margin-top: 6px;
+        margin: 0;
+        display: flex;
+        align-items: baseline;
     }
     .access-sec-item_tel span {
-        line-height: 1.68;
+        line-height: 1.6;
         font-size: 1.6rem;
     }
+    .access-sec-item_tel a {
+        margin-top: 6px;
+        pointer-events: auto;
+    }
+    
     .access-sec-item_mail p {
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.5;
+        margin-top: 7px;
     }
     .access-sec-item_hours {
         margin-top: 14px;
         margin-left: 0;
+        padding: 12px 0;
     }
     .access-sec-item_hours p {
         font-size: 1.6rem;
         font-weight: 500;
-        line-height: 1.8;
+        line-height: 1.87;
     }
     #contact {
         padding: 43px 0 50px;
@@ -1005,9 +1017,11 @@ input[type="submit"]:hover {
     .section-desc {
         font-size: 1.6rem;
         text-align: left;
-        margin-bottom: 34px;
         font-weight: 500;
         line-height: 1.8;
+    }
+    .form_items {
+        margin-top: 34px;
     }
     .form_item {
         display: block;
@@ -1015,27 +1029,29 @@ input[type="submit"]:hover {
     .form_label {
         font-size: 1.8rem;
         line-height: 1.8;
-        margin-bottom: 2px;
         font-weight: 700;
     }
     input[type="text"]{
         width: 100%;
         height: 50px;
+        margin-top: 2px;
         margin-bottom: 17px;
     }
     input[type="email"]{
         width: 100%;
         height: 50px;
+        margin-top: 2px;
         margin-bottom: 17px;
     }
     textarea {
         width: 100%;
-        margin-bottom: 50px;
+        margin-top: 2px;
+        margin-bottom: 0;
     }
     .contact_button {
-        margin: 0;
+        margin: 0 auto;
         width: 100%;
-        max-width: 100%;
+        max-width: 335px;
     }
     .contact_button input[type="submit"] {
         padding: 8px 7px;
@@ -1043,6 +1059,7 @@ input[type="submit"]:hover {
         height: 41px;
         color: #fff;
         line-height: 1.3;
+        margin-top: 45px;
     } 
     input[type="submit"]:hover {
         color: #0D96A0;
@@ -1054,7 +1071,7 @@ input[type="submit"]:hover {
     .footer-nav_lists {
         flex-wrap: wrap; 
         justify-content: center; 
-        line-height: 1.83;
+        line-height: 1.8;
         column-gap: 20px;
     }
     .footer-nav_list a {
@@ -1096,6 +1113,9 @@ input[type="submit"]:hover {
     }
     .br-pc {
         display: none;
+    }
+    .strengths-text-area h4 {
+        font-size: 1.9rem;
     }
     .strengths-text-area2 h4 {
         font-size: 2rem;
