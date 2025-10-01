@@ -55,7 +55,6 @@ a {
     height: 50px;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 999;
     padding-left: calc(99 / 1080 * 100vw);
     padding-right: calc(60 / 1080 * 100vw);
@@ -125,11 +124,13 @@ a {
     margin-top: 50px; 
     position: relative;
 }
+.fv_image {
+    line-height: 0;
+}
 .fv_image picture,
 .fv_image img {
     display: block;
-    width: auto;
-    max-width: 100%; /* はみ出さない保険 */
+    max-width: 100%; 
 }
 .main_copy {
     background-color: rgba(255,255,255,0.7);
@@ -240,7 +241,7 @@ a {
     width: 396px;
 }
 .strengths-sec-item_image {
-    line-height: 0; /* 画像下の隙間を消す */
+    line-height: 0; 
 }
 .strengths-sec-item_image img {
     max-width: 440px;
@@ -248,14 +249,14 @@ a {
     margin-right: auto;
 }
 .strengths-sec-item_image picture {
-    display: block;   /* ブロック化で親幅に合わせる */
+    display: block;  
     width: 100%;
 }
 .strengths-sec-item_image picture img {
-    display: block;   /* 下の余白を消す */
-    height: auto;     /* 縦横比を維持 */
-    max-width: 440px; /* 必要に応じて最大幅を設定 */
-    margin: 0 auto;   /* 中央寄せ */
+    display: block;   
+    height: auto;     
+    max-width: 440px; 
+    margin: 0 auto;  
 }
 #service {
     padding: 63px 0 59px;
@@ -267,7 +268,6 @@ a {
     margin-bottom: 48px;
     align-items: center;
     justify-content: center;
-    
     height: auto;
 }
 .service-icon {
@@ -275,7 +275,6 @@ a {
     height: 25px;
 }
 .service-with-images h2 {
-
     font-size: 2.5rem;
     line-height: 1.44;
     font-weight: 700;
@@ -322,6 +321,7 @@ a {
     padding: 63px 0 68px;
     width: 100%;
     background-color: rgba(13,150,160,0.102);
+    margin-top: 0;
 }
 .news-with-images {
     display: flex;
@@ -345,20 +345,20 @@ a {
     list-style: none;
     padding: 0;
     margin: 0; 
-    border-top: 1px solid #707070; 
+    border-top: 1px solid #707070;   
 }
 .news-item  {
     border-bottom: 1px solid #707070;
     display: grid;   
     height: auto;
+    padding: 15px 18.5px;
 }
 .news-item a {
     display: grid;
     grid-template-columns: 92px 185px 1fr; 
-    padding: 14px 18.5px;
     align-items: center;
     gap: 0;
-    height: 60px;
+    line-height: 1.6;
 }
 .news-date time {
     width: 92px;
@@ -787,7 +787,7 @@ input[type="submit"]:hover {
         margin: 0;
     }
     .strengths-sec_items {
-        row-gap: 43px;
+        row-gap: 42px;
     }
     .strengths-sec_item {
         flex-direction: column-reverse; 
@@ -808,13 +808,13 @@ input[type="submit"]:hover {
     }
     .strengths-sec-item_title {
         width: 100%;
-
     }
     .strengths-sec-item_title h4 {
         margin-top: 26px;
         font-size: 2rem;
         line-height: 1.5;
         text-align: center;
+        font-weight: 700;
     }
     .strengths-sec-item_text {
         width: 100%;
@@ -825,6 +825,7 @@ input[type="submit"]:hover {
         font-size: 1.6rem;
         line-height: 1.875;
         text-align: left;
+        font-weight: 500;
     }
     .br-pc {
         display: none;
@@ -864,7 +865,7 @@ input[type="submit"]:hover {
         margin-bottom: 39px;
         font-size: 1.6rem;
         font-weight: 500;
-        line-height: 1.875;
+        line-height: 1.87;
     }
     #news {
         padding: 43px 0 50px;
@@ -872,37 +873,28 @@ input[type="submit"]:hover {
     .news-item {
         display: block;
         text-align: left;
-        padding: 28px 0;
+        padding: 28px 10px;
+        padding-right: 0;
     }
     .news-item a {
         gap: 0;
         grid-template-columns: none; 
     }
     .news-date {
-        margin-left: 10px;
         font-size: 1.7rem;
         line-height: 1.4;
-        font-weight: 700;
-        margin-bottom: 2px;
     }
-    .news-title {
-        margin-left: 10px;  
-        margin-bottom: 6px;
+    .news-title h3{
+        margin-top: 2px;
+        margin-left: 0;
     }
-    .news-text {
-        margin-left: 10px;
+    .news-text p {
         font-size: 1.6rem;
-        width: 95%;
+        width: 100%;
         font-weight: 500;
         line-height: 1.5;
-    }
-    .news-text2 {
-        margin-left: 10px; 
-        white-space: nowrap;
-        font-size: 1.6rem;
-        width: 95%;
-        font-weight: 500;
-        line-height: 1.5;
+        margin: 0;
+        margin-top: 6px;
     }
     #access {
         padding: 43px 0 50px;
@@ -959,12 +951,15 @@ input[type="submit"]:hover {
         margin-top: 6px;
         pointer-events: auto;
     }
-    
-    .access-sec-item_mail p {
+    .access-sec-item_mail {
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.5;
         margin-top: 7px;
+    }
+    .access-sec-item span {
+        font-size: 1.6rem;
+        line-height: 1.5;
     }
     .access-sec-item_hours {
         margin-top: 14px;
@@ -986,7 +981,7 @@ input[type="submit"]:hover {
         font-size: 1.6rem;
         text-align: left;
         font-weight: 500;
-        line-height: 1.8;
+        line-height: 1.87;
     }
     .form_items {
         margin-top: 34px;
@@ -996,8 +991,10 @@ input[type="submit"]:hover {
     }
     .form_label {
         font-size: 1.8rem;
-        line-height: 1.8;
+        line-height: 1.83;
         font-weight: 700;
+        width: 100%;
+        height: auto;
     }
     input[type="text"]{
         width: 100%;
