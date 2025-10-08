@@ -149,6 +149,7 @@ a {
     max-width: 492px;
     height: 210px;
     box-sizing: border-box;
+    white-space: nowrap; 
 }
 .main_copy p {
     font-size: 2.5rem;
@@ -228,7 +229,7 @@ a {
 .strengths-sec_item {
     display: flex;
     align-items: center;
-    column-gap: calc(45 / 880 * 100%);
+    column-gap: 43px;
 }
 .strengths-sec_item:nth-of-type(even) {
     flex-direction: row-reverse;
@@ -242,6 +243,11 @@ a {
 }
 .strengths-sec-item_text {
     margin-top: 19px;
+}
+.strengths-sec-item_text p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-weight: 500;
 }
 .strengths-sec-item_image {
     line-height: 0; 
@@ -309,7 +315,10 @@ a {
     text-align: left;
     color: #505050;
 }
-.service-content picture,
+.service-content picture {
+    display: block;
+    line-height: 0;
+}
 .service-content img {
     width: auto;
     max-width: 100%;
@@ -890,6 +899,7 @@ input[type="submit"]:hover {
     .news-item a {
         gap: 0;
         grid-template-columns: none; 
+        padding: 0;
     }
     .news-date {
         font-size: 1.7rem;
