@@ -20,10 +20,17 @@ p,h1,h2,h3,h4,h5,a {
     color: #505050;
 }
 .img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%v!important;
+    height: auto !important;
+    display: block !important;
+    max-inline-size: none !important;    
+    max-block-size: none !important; 
+    object-fit: cover;  
 } 
+img.service-gazou {
+  width: auto !important;  
+  height: auto !important;
+}
 .iframe {
     max-width: 100%;
     height: auto;  
@@ -125,7 +132,10 @@ a {
 }
 .fv_image {
     line-height: 0;
-    max-width: 100%;
+    width: 100%;
+}
+.fv_image picture {
+    display: block;
 }
 .main_copy {
     background-color: rgba(255,255,255,0.7);
@@ -215,7 +225,7 @@ a {
 .strengths-sec_item {
     display: flex;
     align-items: center;
-    column-gap: 43px;
+    column-gap: 44px;
 }
 .strengths-sec_item:nth-of-type(even) {
     flex-direction: row-reverse;
@@ -657,6 +667,12 @@ input[type="submit"]:hover {
     .sp-only {
         display: block;
     }
+    .br-pc {
+        display: none;
+    }
+    .br-sp {
+        display: none;
+    }
     .strengths-sec-item_content {
         width: 100%;
         max-width: 100%;
@@ -796,7 +812,7 @@ input[type="submit"]:hover {
         margin-top: 8px;
     }
     .strengths-sec-item_text p {
-        width: 100%;
+        width: 95%;
         font-size: 1.6rem;
         line-height: 1.875;
         text-align: left;
