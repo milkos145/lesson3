@@ -664,9 +664,6 @@ input[type="submit"]:hover {
     .message p {
          word-break: auto-phrase;
     }
-    .sp-only {
-        display: block;
-    }
     .br-pc {
         display: none;
     }
@@ -812,7 +809,6 @@ input[type="submit"]:hover {
         margin-top: 8px;
     }
     .strengths-sec-item_text p {
-        width: 95%;
         font-size: 1.6rem;
         line-height: 1.875;
         text-align: left;
@@ -1073,7 +1069,7 @@ input[type="submit"]:hover {
         line-height: 1.33;
     }
     .br-sp {
-        display: block;
+        display: none;
     }
     .br-pc {
         display: none;
