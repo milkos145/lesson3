@@ -5,13 +5,11 @@
 body {
     margin:0;
     font-family: "Noto Sans JP",sans-serif;
-    overflow-x: hidden;
     font-size: 1.8rem;
     line-height: 1.8;
 }
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
     font-size: 62.5%;
     scroll-padding-top: 50px;
 }
@@ -41,6 +39,10 @@ a {
     display: flex;
     height: 100%;
     align-items: center;
+    font-weight: 500;
+}
+a:hover {
+    opacity: 0.7;
 }
 .container {
     font-size: 1.6rem;
@@ -73,7 +75,7 @@ a {
     height: 50px;
     width: 100%;
     justify-content: space-between; 
-    gap: clamp(40px, 4vw, 56px);
+    gap: clamp(60px, 4vw, 56px);
 }
 .header-icon {
     width: 25.49px; 
@@ -84,12 +86,7 @@ a {
     cursor: pointer; 
     line-height: 1.83;
     column-gap: 8px;
-    margin-right: 40px;
-}
-.title:hover {
-    color: #505050; 
-    opacity: 0.5; 
-    transition: color 0.5s ease, opacity 0.5s ease;
+    margin-right: 50px;
 }
 .nav_content {
     margin-left: 0;
@@ -113,17 +110,14 @@ a {
     display: flex;
     align-items: center;
     line-height: 2.35;
-    font-weight: 700;
     height: 100%;
+}
+.nav_btn {
+    font-weight: 700;
     font-size: 1.4rem;
 }
 .header_nav li:not(:first-of-type) {
     margin-left: 10px;
-}
-.nav_btn:hover,
-.header-title:hover {
-    color: #505050; 
-    opacity: 0.5; 
 }
 .fv {
     width: 100%;
@@ -133,9 +127,6 @@ a {
 .fv_image {
     line-height: 0;
     width: 100%;
-}
-.fv_image picture {
-    display: block;
 }
 .main_copy {
     background-color: rgba(255,255,255,0.7);
@@ -250,10 +241,6 @@ a {
     line-height: 0; 
     width: 50%;
 }
-.strengths-sec-item_image picture {
-    display: block;  
-    width: 100%;
-}
 #service {
     padding: 63px 0 59px;
     width: 100%;
@@ -307,16 +294,6 @@ a {
     text-align: left;
     color: #505050;
 }
-.service-content picture {
-    display: block;
-    line-height: 0;
-}
-#news {
-    padding: 63px 0 68px;
-    width: 100%;
-    background-color: rgba(13,150,160,0.102);
-    margin-top: 0;
-}
 .news-with-images {
     display: flex;
     gap: 20px;
@@ -350,11 +327,6 @@ a {
     gap: 0;
     line-height: 1.6;
     padding: 15px 18.5px;
-}
-.news-item :hover {
-    color: #505050; 
-    opacity: 0.5; 
-    transition: color 0.5s ease, opacity 0.5s ease;
 }
 .news-date {
     width: 92px;
@@ -480,14 +452,8 @@ a {
     font-size: 1.8rem;
     font-weight: 500;
 }
-.access-sec-item_tel a:hover {
-    opacity: 0.7;
-}
 .access-sec-item_tel a:active {
     opacity: 1;
-}
-.access-sec-item_mail a:hover {
-    opacity: 0.7;
 }
 #contact {
     padding: 62px 0 80px;
@@ -655,6 +621,7 @@ input[type="submit"]:hover {
     }  
     .header .container {
         white-space: nowrap;
+
     }
     .message img {
         right: 12px;
