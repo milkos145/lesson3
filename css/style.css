@@ -295,6 +295,12 @@ a:hover {
     text-align: left;
     color: #505050;
 }
+#news {
+    padding: 63px 0 68px;
+    width: 100%;
+    background-color: rgba(13,150,160,0.102);
+    margin-top: 0;
+}
 .news-with-images {
     display: flex;
     gap: 20px;
