@@ -1,7 +1,4 @@
 @charset "utf-8";
-* {
-  box-sizing: border-box;
-}
 body {
     margin:0;
     font-family: "Noto Sans JP",sans-serif;
@@ -18,10 +15,7 @@ p,h1,h2,h3,h4,h5,a {
     color: #505050;
 }
 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;  
+    display: block; 
 } 
 img.message-icon {
   width: auto !important;  
@@ -73,7 +67,6 @@ a:hover {
     height: 50px;
     width: 100%;
     justify-content: space-between; 
-    gap: clamp(60px, 4vw, 56px);
 }
 .header-icon {
     width: 25.49px; 
@@ -98,7 +91,6 @@ a:hover {
     height: 100%;
 }
 .header_nav li {
-    list-style-type: none;
     color: #505050;
     height: 100%; 
     display: flex;
@@ -421,7 +413,6 @@ a:hover {
     font-size: 1.8rem;
     color: #505050;
     font-weight: 700;
-
 }
 .access-sec-item_tel a {
     font-size: 2.5rem;
@@ -506,7 +497,7 @@ a:hover {
     font-weight: 700;
     width: 160px;
     color: #505050;  
-    margin-top: 7px;
+    padding-top: 7px;
     line-height: 1.65;
 }
 input[type="text"],
@@ -605,7 +596,6 @@ input[type="submit"]:hover {
 .footer_sns {
     display: flex;
     margin: 8px 0 0;
-    list-style: none;
     justify-content: center; 
     padding: 0;
     gap: 12px;
@@ -626,10 +616,10 @@ input[type="submit"]:hover {
     .pc_none{
         display: none!important;
     }  
-    .header .container {
-        white-space: nowrap;
-
-    }
+    .header {
+		padding-left: 30px;
+		padding-right: 30px; 
+	}
     .message img {
         right: 12px;
         display: block;
@@ -1024,6 +1014,9 @@ input[type="submit"]:hover {
     }
     }
 @media screen and (max-width: 320px){
+    .header-title {
+        font-size: 1.8rem;
+    }
     .main_copy {
         width: 85%;
         height: auto;
