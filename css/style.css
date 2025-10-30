@@ -1041,20 +1041,8 @@ input[type="submit"]:hover {
     .br-pc {
         display: none;
     }
-    .strengths-text-area h4 {
-        font-size: 1.9rem;
-    }
-    .strengths-text-area2 {
-        padding-left: 0;
-    }
-    .strengths-text-area2 h4 {
-        font-size: 2rem;
-    }
-    .strengths-text-area3 h4 {
-        font-size: 2rem;
-    }
-    .strengths-text-area2 p {
-        padding-left: 0;
+    .strengths-sec-item_title h4 {
+        font-size: 1.7rem;
     }
     .break-only-320 {
         display: block; 
