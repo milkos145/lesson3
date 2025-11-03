@@ -491,6 +491,7 @@ a:hover {
     width: 160px;
     color: #505050;  
     line-height: 1.65;
+    margin-top: 7px;
 }
 input[type="text"] {
     border: 1px solid #FFFFFF;
