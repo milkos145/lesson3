@@ -474,8 +474,8 @@ a:hover {
 .contact_form {
     margin-top: 39px;
 }
-.form_items {
-    margin-top: 39px;
+.contact_form .form_item:first-child {
+  margin-top: 0;
 }
 .form_item {
     display: flex;
