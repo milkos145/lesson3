@@ -259,7 +259,7 @@ a:hover {
     margin-top: 48px;
 }
 .service-content {
-    flex: 0 0 30%;
+    flex: 0 0 20%;
     min-width: 260px;
 }
 .service-content:not(:last-of-type) {
