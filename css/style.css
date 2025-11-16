@@ -259,7 +259,8 @@ a:hover {
     margin-top: 48px;
 }
 .service-content {
-    width: 100%;
+    flex: 0 0 30%;
+    min-width: 260px;
 }
 .service-content:not(:last-of-type) {
     margin-right: 50px;
@@ -828,14 +829,12 @@ input[type="submit"]:hover {
     .news-item {
         display: block;
         text-align: left;
-        padding: 28px 10px;
-        padding-right: 0;
         width: 100%;
     }
     .news-item a {
         gap: 0;
         grid-template-columns: none; 
-        padding: 0;
+        padding: 28px 10px;
     }
     .news-date {
         font-size: 1.7rem;
@@ -853,7 +852,6 @@ input[type="submit"]:hover {
         line-height: 1.5;
         margin: 0;
         margin-top: 6px;
-        padding-right: 10.5px;
     }
     .news-text2 {
         font-size: 1.6rem;
@@ -862,6 +860,7 @@ input[type="submit"]:hover {
         line-height: 1.5;
         margin: 0;
         margin-top: 6px;
+        white-space: nowrap;
     }
     #access {
         padding: 43px 0 50px;
@@ -907,6 +906,7 @@ input[type="submit"]:hover {
         margin: 0;
         display: flex;
         align-items: baseline;
+        margin-top: 6px;
     }
     .access-sec-item_tel span {
         line-height: 1.6;
@@ -914,7 +914,6 @@ input[type="submit"]:hover {
         font-weight: 500;
     }
     .access-sec-item_tel a {
-        margin-top: 6px;
         pointer-events: auto;
     }
     .access-sec-item_mail {
@@ -1060,6 +1059,9 @@ input[type="submit"]:hover {
     .address-text .post,
     .address-text .address {
         display: inline-block;
+    }
+    .footer-nav_list a {
+        font-size: 1.6rem;
     }
     .footer_copyright .name {
         display: block;
