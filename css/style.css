@@ -253,17 +253,15 @@ a:hover {
     font-weight: 700;
 }
 .service-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 常に3カラム */
+    gap: 50px; 
     max-width: 880px;
-    margin: 0 auto;
-    margin-top: 48px;
+    margin: 48px auto 0;
 }
 .service-content {
-    flex: 1 1 calc(33.33% - 20px);
+    flex: 1 1 calc(33.33% - 20px);       
     min-width: 200px;
-}
-.service-content:not(:last-of-type) {
-    margin-right: 50px;
 }
 .service-content h3 {
     width: 100%;
