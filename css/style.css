@@ -4,6 +4,7 @@ body {
     font-family: "Noto Sans JP",sans-serif;
     font-size: 1.8rem;
     line-height: 1.8;
+    letter-spacing: (0);
 }
 html {
     scroll-behavior: smooth;
@@ -18,8 +19,8 @@ img {
     display: block; 
 } 
 img.message-icon {
-  width: auto !important;  
-  height: auto !important;
+    width: auto !important;  
+    height: auto !important;
 }
 .iframe {
     max-width: 100%;
@@ -308,7 +309,6 @@ a:hover {
 .news-item  {
     border-bottom: 1px solid #707070;
     display: grid;   
-    height: auto;
 }
 .news-item a {
     display: grid;
