@@ -69,8 +69,8 @@ a:hover {
     width: 100%;
     justify-content: space-between; 
 }
-.header-icon {
-    width: 25.49px; 
+.icon {
+    width: 25.49px;
 }
 .title {
     font-size: 1.8rem;
@@ -115,7 +115,6 @@ a:hover {
     position: relative;
 }
 .fv_image {
-    line-height: 0;
     width: 100%;
     position: relative;
 }
@@ -123,22 +122,22 @@ a:hover {
     background-color: rgba(255,255,255,0.7);
     position: absolute;
     left: 0;
-    padding: 23px 35px 23px 99px;
+    padding: 2.13vw 3.24vw 2.13vw 9.17vw;
     top: 50%;
     transform:translateY(-47%);
     width: 100%;
-    max-width: 492px;
+    max-width: 45.56vw;
     height: auto;
     box-sizing: border-box;
-    white-space: nowrap; 
 }
-.main_copy p {
-    font-size: 2.5rem;
+.main_copy h2 {
+    font-size: 2.31vw;
     font-weight: 700;
     line-height: 1.44;
 }
-.main_copy h1 {
-    font-size: 4rem;
+.main_copy h2 span {
+    display: block;
+    font-size: 3.70vw;
     color: #0D96A0;
     font-weight: 700;
     line-height: 1.5;
@@ -171,7 +170,7 @@ a:hover {
     font-weight: 500;
     margin-top: 15px;
 }
-.message img {
+.message-icon {
     position: absolute;
     right:  76.24px;
     bottom: 33.88px;
@@ -187,11 +186,6 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
-.strengths-icon {
-    width: 25.49px;
-    height: auto;
-    display: inline-block;
-}    
 .strengths-with-images h3 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -244,10 +238,6 @@ a:hover {
     justify-content: center;
     height: auto;
 }
-.service-icon {
-    width: 25.49px;
-    height: 25px;
-}
 .service-with-images h2 {
     font-size: 2.5rem;
     line-height: 1.44;
@@ -255,7 +245,7 @@ a:hover {
 }
 .service-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 常に3カラム */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 50px; 
     max-width: 880px;
     margin: 48px auto 0;
@@ -297,10 +287,6 @@ a:hover {
     line-height: 1.44;
     width: 100px;
 }
-.news-icon {
-    width: 25.49px;
-    height: 25px;
-}
 .news-list {
     list-style: none;
     border-top: 1px solid #707070;  
@@ -333,8 +319,7 @@ a:hover {
     line-height: 1.25;
     margin-left: 25px;
 }
-.news-text,
-.news-text2 {
+.news-text {
     font-weight: 500;
     margin-top: 0;
     margin-right: 0;
@@ -359,15 +344,11 @@ a:hover {
     font-weight: 700;
     line-height: 1.44;
 }
-.access-icon {
-    width: 25.49px;
-}
 .access-flex {
     display: flex;
-    justify-content: center;
     width: 100%; 
     margin-top: 46px;
-    gap: 46px
+    gap: 5%;
 }
 .access-img-area {
     width: 53%;
@@ -378,7 +359,8 @@ a:hover {
     height: 100%;
 }
 .access-sec-item {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 .access-sec-item_name p {
     font-size: 2.2rem;
@@ -386,47 +368,50 @@ a:hover {
     font-weight: 700;
 }
 .access-sec-item_address {
-    margin-top: 15px;
-}
-.access-sec-item_address p {
-    line-height: 1.5;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-.access-sec-item_tel {
-    margin-top: 14px;
+    font-style: normal; 
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
 }
-.access-sec-item_tel span {
-    line-height: 1.5;
+.access-sec-item_address .add {
     font-size: 1.8rem;
-    color: #505050;
-    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 1.5rem;  
 }
-.access-sec-item_tel a {
-    font-size: 2.5rem;
+.access-sec-item_address .tel {
+    align-items: baseline;
+    margin-top: 1.4rem;   
+}
+.access-sec-item_address .tel span {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.access-sec-item_address .tel-link {
+    font-size: 2.5rem; 
     line-height: 1.6;
     font-weight: 700;
     color: #0D96A0;
-    pointer-events: none;
+    text-decoration: none;
 }
-.access-sec-item_mail {
-    margin-top: 8px;
+.access-sec-item_address .mail {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-top: 0.8rem;  
+}
+.access-sec-item_address .mail-link {
+    font-size: 1.8rem;  
+    text-decoration: none;
+}
+.access-sec-item_address p {
+    margin: 0;
     display: flex;
-    align-items: baseline;
-    line-height: 1.5;
-    color: #505050;
+    gap: 6px; 
 }
-.access-sec-item_mail span {
-    line-height: 1.5;
-    font-size: 1.8rem;
+.access-sec-item_address a {
+    text-decoration: none;
     font-weight: 500;
 }
-.access-sec-item_mail p {
-    line-height: 1.5;
-    font-size: 1.8rem;
-    font-weight: 500;
+.access-sec-item_address a:hover {
+    text-decoration: underline;
 }
 .access-sec-item_hours {
     margin-top: 27px;
@@ -473,9 +458,6 @@ a:hover {
 .contact_form {
     margin-top: 39px;
 }
-.contact_form .form_item:first-child {
-    margin-top: 0;
-}
 .form_item {
     display: flex;
     gap: 18px;
@@ -492,41 +474,25 @@ a:hover {
     line-height: 1.65;
     margin-top: 7px;
 }
-input[type="text"] {
+input[type="text"]
+,input[type="email"]
+,textarea {
     border: 1px solid #FFFFFF;
     height: 40px;
     width: 100%;
     max-width: 711px;
     padding: 10px 15px;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin-inline: auto;
-    outline: none;
-    background-color: #fff;
-    margin: 0;
-}
-input[type="email"] {
-    border: 1px solid #FFFFFF;
-    height: 40px;
-    width: 100%;
-    max-width: 711px;
-    padding: 10px 15px;
-    font-size: 1.6rem;
-    margin-inline: auto;
-    margin-top: 30px;
     outline: none;
     background-color: #fff;
     margin: 0;
 }
 textarea {
-    width: 100%;
-    max-width: 711px;
     height: 300px;
     resize: none;
     border: none;
-    outline: none;
-    font-size: 1.6rem;
-    padding: 10px 15px;
-    background-color: #fff;
+    word-break: break-word;
 }
 .contact_button {
     margin-top: 50px;
@@ -692,7 +658,7 @@ input[type="submit"]:hover {
         width: 100%;
     }
     .main_copy {
-        padding: 18px 20px;
+        padding: 18px 20px 14px 20px;
         bottom: 0;  
         top: auto;
         transform: none;
@@ -700,15 +666,13 @@ input[type="submit"]:hover {
         max-width: 311px;
         height: 148px;
     }
-    .main_copy p {
-        font-size: 2rem;
+    .main_copy h2 {
+        font-size: 5.33vw;
         line-height: 1.44;
-        font-weight: 700;
     }
-    .main_copy h1 {
-        font-size: 3rem;
+    .main_copy h2 span {
+        font-size: 8vw;
         line-height: 1.33;
-        font-weight: 700;
     }
     .message {
         padding: 49px 0 39px;
@@ -851,15 +815,6 @@ input[type="submit"]:hover {
         margin: 0;
         margin-top: 6px;
     }
-    .news-text2 {
-        font-size: 1.6rem;
-        width: 100%;
-        font-weight: 500;
-        line-height: 1.5;
-        margin: 0;
-        margin-top: 6px;
-        white-space: nowrap;
-    }
     #access {
         padding: 43px 0 50px;
     }
@@ -878,8 +833,6 @@ input[type="submit"]:hover {
         margin: 0 auto;
     }
     .access-img-area iframe {
-        width: 100%;
-        height: auto;
         aspect-ratio: 335 / 222;
         display: block;
     }
@@ -956,20 +909,16 @@ input[type="submit"]:hover {
         padding: 0;
         margin: 0;
     }
-    input[type="text"]{
+    input[type="text"]
+    ,input[type="email"]
+    ,textarea {
         width: 100%;
         height: 50px;
         margin-top: 2px;
         margin-bottom: 0;
-    }
-    input[type="email"]{
-        width: 100%;
-        height: 50px;
-        margin-top: 2px;
+        font-size: 1.6rem;
     }
     textarea {
-        width: 100%;
-        margin-top: 2px;
         vertical-align: bottom; 
     }
     .contact_button {
