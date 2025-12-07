@@ -321,10 +321,8 @@ a:hover {
 }
 .news-text {
     font-weight: 500;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 49px;
+    margin: 0;
+    padding-left: 49px;
     font-size: 1.7rem;  
     line-height: 1.7;
 }
@@ -395,7 +393,8 @@ a:hover {
 .access-sec-item_address .mail {
     font-size: 1.8rem;
     line-height: 1.5;
-    margin-top: 0.8rem;  
+    margin-top: 0.8rem;
+    font-weight: 500;  
 }
 .access-sec-item_address .mail-link {
     font-size: 1.8rem;  
@@ -404,11 +403,6 @@ a:hover {
 .access-sec-item_address p {
     margin: 0;
     display: flex;
-    gap: 6px; 
-}
-.access-sec-item_address a {
-    text-decoration: none;
-    font-weight: 500;
 }
 .access-sec-item_address a:hover {
     text-decoration: underline;
@@ -680,17 +674,15 @@ input[type="submit"]:hover {
     .message h2 {
         font-size: 2.5rem;
         line-height: 1.4;
-        font-weight: 700;
         margin-bottom: 0;
     }
     .message p {
         margin-top: 17px;
         font-size: 1.6rem;
-        font-weight: 500;
         text-align: left;
         line-height: 1.87;
     }
-    .message img {
+    .message-icon {
         position: absolute;
         bottom: 45px;
         right: 20px;
@@ -732,9 +724,7 @@ input[type="submit"]:hover {
     .strengths-sec-item_title h4 {
         margin-top: 26px;
         font-size: 2rem;
-        line-height: 1.5;
         text-align: center;
-        font-weight: 700;
     }
     .strengths-sec-item_text {
         width: 100%;
@@ -744,7 +734,6 @@ input[type="submit"]:hover {
         font-size: 1.6rem;
         line-height: 1.875;
         text-align: left;
-        font-weight: 500;
     }
     .br-pc {
         display: none;
@@ -766,12 +755,9 @@ input[type="submit"]:hover {
         margin-top: 39px;
     }
     .service-content:not(:last-of-type) {
-        margin-top: 39px;
         margin-right: 0;
     }
     .service-content h3 {
-        font-size: 2rem;
-        font-weight: 700;
         line-height: 1.5;
         margin-top: 30px;
         margin-bottom: 0;
@@ -779,7 +765,6 @@ input[type="submit"]:hover {
     .service-content p {
         margin-top: 7px;
         font-size: 1.6rem;
-        font-weight: 500;
         line-height: 1.87;
     }
     #news {
@@ -794,14 +779,12 @@ input[type="submit"]:hover {
         width: 100%;
     }
     .news-item a {
-        gap: 0;
         grid-template-columns: none; 
         padding: 28px 10px;
     }
     .news-date {
         font-size: 1.7rem;
         line-height: 1.4;
-        font-weight: 700;
     }
     .news-title {
         margin-top: 2px;
@@ -810,9 +793,8 @@ input[type="submit"]:hover {
     .news-text {
         font-size: 1.6rem;
         width: 100%;
-        font-weight: 500;
         line-height: 1.5;
-        margin: 0;
+        padding: 0;
         margin-top: 6px;
     }
     #access {
@@ -840,41 +822,26 @@ input[type="submit"]:hover {
         flex: 1;
     }
     .access-sec-item_name p {
-        font-size: 2.2rem;
-        line-height: 1.5;
-        font-weight: 700;
         margin-top: 30px;
     }
-    .access-sec-item_address {
+    .access-sec-item_address .add {
+        font-size: 1.6rem;
+        font-weight: 500;
         margin-top: 12px;
+        gap:  0;
     }
-    .access-sec-item_address p {
-        line-height: 1.5;
-        font-size: 1.6rem;
-        font-weight: 500;
-    }
-    .access-sec-item_tel {
-        margin: 0;
-        display: flex;
-        align-items: baseline;
+    .access-sec-item .tel {
         margin-top: 6px;
+        gap:2px;
     }
-    .access-sec-item_tel span {
-        line-height: 1.6;
+    .access-sec-item .tel span{
         font-size: 1.6rem;
-        font-weight: 500;
+        line-height: 1.68;
     }
-    .access-sec-item_tel a {
-        pointer-events: auto;
-    }
-    .access-sec-item_mail {
+    .access-sec-item .mail {
         font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 1.5;
         margin-top: 7px;
-    }
-    .access-sec-item span {
-        font-size: 1.6rem;
+        gap: 0;
     }
     .access-sec-item_hours {
         margin-top: 14px;
@@ -883,7 +850,6 @@ input[type="submit"]:hover {
     }
     .access-sec-item_hours p {
         font-size: 1.6rem;
-        font-weight: 500;
         line-height: 1.87;
     }
     #contact {
@@ -892,7 +858,6 @@ input[type="submit"]:hover {
     .section-desc {
         font-size: 1.6rem;
         text-align: left;
-        font-weight: 500;
         line-height: 1.87;
         margin-top: 43px;
     }
@@ -903,16 +868,11 @@ input[type="submit"]:hover {
     .form_label {
         font-size: 1.8rem;
         line-height: 1.83;
-        font-weight: 700;
-        width: 100%;
-        height: auto;
         padding: 0;
         margin: 0;
     }
     input[type="text"]
-    ,input[type="email"]
-    ,textarea {
-        width: 100%;
+    ,input[type="email"] {
         height: 50px;
         margin-top: 2px;
         margin-bottom: 0;
@@ -933,7 +893,6 @@ input[type="submit"]:hover {
         color: #fff;
         line-height: 1.3;
         margin-top: 50px;
-        font-weight: 700;
     } 
     input[type="submit"]:hover {
         color: #0D96A0;
@@ -944,7 +903,6 @@ input[type="submit"]:hover {
     }
     .footer-nav_lists {
         flex-wrap: wrap; 
-        justify-content: center; 
         line-height: 1.8;
         column-gap: 20px;
     }
@@ -954,7 +912,6 @@ input[type="submit"]:hover {
     }
     .footer_copyright {
         font-size: 1.6rem;
-        font-weight: 700;
         margin-top: 15px;
         line-height: 2;
     }
