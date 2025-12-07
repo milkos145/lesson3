@@ -590,7 +590,7 @@ input[type="submit"]:hover {
         right: 30px;
     }
     .message p {
-         word-break: auto-phrase;
+        word-break: auto-phrase;
     }
     .br-pc {
         display: none;
